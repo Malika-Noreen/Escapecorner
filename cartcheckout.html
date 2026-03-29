@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-fixed": "#3b473f",
+              "on-secondary-container": "#634c51",
+              "on-error-container": "#6e0a12",
+              "inverse-surface": "#0e0e0d",
+              "primary": "#44627f",
+              "surface-dim": "#dadad6",
+              "tertiary-fixed-dim": "#d2e0d4",
+              "error": "#a83836",
+              "secondary-fixed": "#fbdae1",
+              "secondary-container": "#fbdae1",
+              "on-tertiary-container": "#4d5a51",
+              "on-surface": "#313330",
+              "tertiary-dim": "#49564d",
+              "surface-container-high": "#e9e8e4",
+              "primary-dim": "#385673",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary": "#eefdf0",
+              "on-surface-variant": "#5e5f5c",
+              "primary-fixed": "#b9d7fa",
+              "error-dim": "#67040d",
+              "on-primary-fixed": "#183854",
+              "error-container": "#fa746f",
+              "tertiary-container": "#e1efe2",
+              "outline-variant": "#b2b2ae",
+              "on-secondary-fixed-variant": "#6d555b",
+              "primary-container": "#b9d7fa",
+              "on-secondary": "#fff7f7",
+              "outline": "#7a7b77",
+              "on-background": "#313330",
+              "inverse-on-surface": "#9e9d9a",
+              "surface-container": "#efeeea",
+              "surface-container-highest": "#e3e3de",
+              "surface-container-low": "#f5f3f0",
+              "secondary-fixed-dim": "#ecccd3",
+              "tertiary-fixed": "#e1efe2",
+              "secondary-dim": "#644d53",
+              "inverse-primary": "#b9d7fa",
+              "on-primary-container": "#2d4b68",
+              "surface": "#fbf9f6",
+              "on-primary-fixed-variant": "#375572",
+              "background": "#fbf9f6",
+              "on-error": "#fff7f6",
+              "surface-bright": "#fbf9f6",
+              "on-secondary-fixed": "#4f3a3f",
+              "on-tertiary-fixed-variant": "#57645a",
+              "secondary": "#71595f",
+              "on-primary": "#f7f9ff",
+              "surface-tint": "#44627f",
+              "primary-fixed-dim": "#abc9ec",
+              "surface-variant": "#e3e3de",
+              "tertiary": "#556259"
+            },
+            fontFamily: {
+              "headline": ["Newsreader"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #fbf9f6;
+            color: #313330;
+        }
+        .font-serif { font-family: 'Newsreader', serif; }
+        .font-sans { font-family: 'Manrope', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fbf9f6]/80 backdrop-blur-md">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-serif italic text-primary">escape corner</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-slate-500 font-sans tracking-widest uppercase text-xs hover:text-primary transition-colors duration-300" href="#">Categories</a>
+<a class="text-primary border-b-2 border-primary pb-1 font-sans tracking-widest uppercase text-xs" href="#">Cart</a>
+<a class="text-slate-500 font-sans tracking-widest uppercase text-xs hover:text-primary transition-colors duration-300" href="#">Contact</a>
+</div>
+<div class="flex items-center space-x-6">
+<div class="relative hidden lg:block">
+<input class="bg-surface-container-low border-none rounded-lg px-4 py-2 text-sm focus:ring-1 focus:ring-primary/30 w-64 transition-all" placeholder="Search curated titles..." type="text"/>
+</div>
+<button class="text-primary hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+<button class="text-primary hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-28 pb-20 px-8 max-w-7xl mx-auto">
+<header class="mb-16">
+<h1 class="text-5xl font-serif italic text-on-surface mb-4">Your Sanctuary Selection</h1>
+<nav class="flex items-center space-x-2 text-sm font-label tracking-widest uppercase text-on-surface-variant">
+<a class="hover:text-primary transition-colors" href="#">Home</a>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span>Cart &amp; Checkout</span>
+</nav>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<!-- Left Column: Cart Items & Form -->
+<div class="lg:col-span-8 space-y-16">
+<!-- Cart Items Section -->
+<section>
+<div class="flex items-center justify-between mb-8">
+<h2 class="text-2xl font-serif italic">Selected Books</h2>
+<a class="text-xs font-label tracking-widest uppercase text-primary border-b border-primary/20 hover:border-primary transition-all" href="#">Continue Shopping</a>
+</div>
+<div class="space-y-8">
+<!-- Item 1 -->
+<div class="flex items-start bg-surface-container-lowest p-6 rounded-xl transition-all duration-300 hover:bg-white">
+<div class="w-24 h-36 bg-surface-container-high rounded overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="close-up of a minimalist book cover titled The Quiet Bond featuring abstract line art on cream paper" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfLJCgCg7IV1Yw-W_P0sox5dc41V2x2nYYTDb2yr1cWqgwuuJJSg5YXbuQVDI5xwDF6JRd77nge1t1FHXZUdKsZvHG47Xmyzd9cawCk_XB3LvaLhG3ugXF0oisil8rQJCnTQxAcENjh3VWy4A_2Rilbdu11biIDCg_OAMNGEtYwKmf-ArnhOo-TZnR_QaIg_onPJVm8mx6k1E0SJaNaQasOcHykDmPHijPqO824BgeY53I8wrVnOMpVBvkf_usSbpB9PnPv6NIk3Y"/>
+</div>
+<div class="ml-8 flex-grow">
+<div class="flex justify-between">
+<div>
+<h3 class="text-xl font-serif italic text-on-surface">The Quiet Bond</h3>
+<p class="text-sm font-sans text-on-surface-variant mt-1">Elena Moretti</p>
+</div>
+<span class="text-lg font-sans font-semibold">$24.00</span>
+</div>
+<div class="mt-8 flex items-center justify-between">
+<div class="flex items-center bg-surface-container-low rounded-lg p-1">
+<button class="p-1 hover:text-primary"><span class="material-symbols-outlined text-sm">remove</span></button>
+<span class="px-4 text-sm font-sans">1</span>
+<button class="p-1 hover:text-primary"><span class="material-symbols-outlined text-sm">add</span></button>
+</div>
+<button class="text-xs font-label tracking-widest uppercase text-error/60 hover:text-error transition-colors flex items-center">
+<span class="material-symbols-outlined text-sm mr-1">delete</span> Remove
+                                    </button>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex items-start bg-surface-container-lowest p-6 rounded-xl transition-all duration-300 hover:bg-white">
+<div class="w-24 h-36 bg-surface-container-high rounded overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="aesthetic book cover titled Paper Hearts with soft pink watercolor splashes and elegant typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPG_y_X2qPmeB0XrVqQrdzIGTY9416pJxd0Pxp602R_yGPz8VEjnCAuCVpID7ul-dyWUFyzUDjTknWJH2gonbBFErwG3gH0zJrhcSwjl9aFRhSaHGozsO-WsoAU_Ks--k5HmbXVgoIVpgt0kV04Pdp8RKqAo8xTM3xm64wuFcW6TaoEwPR0EgrF8AY1N-Vlpgc7b6Gj_E5DC1SreV4eg3vYjuqt-L2_YyR5CzHCgXsaL-tTQ-DUH1vI4H09-3bcF_dWAibHeykatI"/>
+</div>
+<div class="ml-8 flex-grow">
+<div class="flex justify-between">
+<div>
+<div class="flex items-center gap-2">
+<h3 class="text-xl font-serif italic text-on-surface">Paper Hearts</h3>
+<span class="px-2 py-0.5 bg-secondary-container text-on-secondary-container text-[10px] font-label uppercase tracking-widest rounded-full">Love Stories</span>
+</div>
+<p class="text-sm font-sans text-on-surface-variant mt-1">Julianne Thorne</p>
+</div>
+<span class="text-lg font-sans font-semibold">$19.50</span>
+</div>
+<div class="mt-8 flex items-center justify-between">
+<div class="flex items-center bg-surface-container-low rounded-lg p-1">
+<button class="p-1 hover:text-primary"><span class="material-symbols-outlined text-sm">remove</span></button>
+<span class="px-4 text-sm font-sans">1</span>
+<button class="p-1 hover:text-primary"><span class="material-symbols-outlined text-sm">add</span></button>
+</div>
+<button class="text-xs font-label tracking-widest uppercase text-error/60 hover:text-error transition-colors flex items-center">
+<span class="material-symbols-outlined text-sm mr-1">delete</span> Remove
+                                    </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Checkout Form -->
+<section class="space-y-12">
+<!-- Shipping Section -->
+<div>
+<div class="flex items-center gap-4 mb-8">
+<span class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center text-xs font-bold">1</span>
+<h2 class="text-2xl font-serif italic">Shipping Sanctuary</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-[10px] font-label tracking-widest uppercase text-on-surface-variant ml-1">Full Name</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary/20 text-sm" placeholder="Enter name" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-[10px] font-label tracking-widest uppercase text-on-surface-variant ml-1">Email Address</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary/20 text-sm" placeholder="reader@example.com" type="email"/>
+</div>
+<div class="md:col-span-2 space-y-2">
+<label class="text-[10px] font-label tracking-widest uppercase text-on-surface-variant ml-1">Street Address</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary/20 text-sm" placeholder="123 Quiet Lane" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-[10px] font-label tracking-widest uppercase text-on-surface-variant ml-1">City</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary/20 text-sm" placeholder="Literary Grove" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-[10px] font-label tracking-widest uppercase text-on-surface-variant ml-1">Postal Code</label>
+<input class="w-full bg-surface-container-low border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary/20 text-sm" placeholder="00000" type="text"/>
+</div>
+</div>
+</div>
+<!-- Payment Section -->
+<div>
+<div class="flex items-center gap-4 mb-8">
+<span class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center text-xs font-bold">2</span>
+<h2 class="text-2xl font-serif italic">Secure Payment</h2>
+</div>
+<div class="bg-surface-container p-8 rounded-xl space-y-6">
+<div class="flex items-center gap-4 mb-4">
+<div class="flex items-center gap-2 p-3 bg-white rounded-lg cursor-pointer border-2 border-primary">
+<span class="material-symbols-outlined text-primary" data-weight="fill">credit_card</span>
+<span class="text-sm font-sans font-medium">Credit Card</span>
+</div>
+<div class="flex items-center gap-2 p-3 bg-white/50 rounded-lg cursor-pointer border-2 border-transparent">
+<span class="material-symbols-outlined text-slate-400">account_balance_wallet</span>
+<span class="text-sm font-sans font-medium text-slate-500">Digital Wallet</span>
+</div>
+</div>
+<div class="space-y-6">
+<div class="space-y-2">
+<label class="text-[10px] font-label tracking-widest uppercase text-on-surface-variant ml-1">Card Number</label>
+<div class="relative">
+<input class="w-full bg-surface-container-lowest border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary/20 text-sm" placeholder="0000 0000 0000 0000" type="text"/>
+<span class="absolute right-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-slate-300">lock</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-[10px] font-label tracking-widest uppercase text-on-surface-variant ml-1">Expiry</label>
+<input class="w-full bg-surface-container-lowest border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary/20 text-sm" placeholder="MM/YY" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-[10px] font-label tracking-widest uppercase text-on-surface-variant ml-1">CVC</label>
+<input class="w-full bg-surface-container-lowest border-none rounded-lg px-4 py-3 focus:ring-2 focus:ring-primary/20 text-sm" placeholder="***" type="text"/>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Right Column: Order Summary (Sticky) -->
+<div class="lg:col-span-4">
+<div class="sticky top-32 space-y-6">
+<div class="bg-surface-container-low p-8 rounded-xl">
+<h3 class="text-xl font-serif italic mb-8">Order Review</h3>
+<div class="space-y-4 mb-8">
+<div class="flex justify-between text-sm">
+<span class="text-on-surface-variant">Subtotal</span>
+<span class="font-semibold">$43.50</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-on-surface-variant">Curation &amp; Shipping</span>
+<span class="font-semibold text-primary">Free</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-on-surface-variant">Estimated Tax</span>
+<span class="font-semibold">$3.48</span>
+</div>
+</div>
+<div class="pt-6 border-t border-outline-variant/15 flex justify-between items-end mb-8">
+<span class="text-lg font-serif italic">Total</span>
+<span class="text-3xl font-sans font-bold text-primary">$46.98</span>
+</div>
+<button class="w-full py-4 bg-gradient-to-r from-primary to-primary-dim text-on-primary rounded-lg font-label tracking-widest uppercase text-xs shadow-xl shadow-primary/10 hover:shadow-primary/20 transition-all flex items-center justify-center gap-2">
+                            Finalize Order <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+<p class="text-[10px] text-center text-on-surface-variant mt-6 leading-relaxed">
+                            Every book is hand-wrapped in recycled paper and shipped with a custom linen bookmark.
+                        </p>
+</div>
+<!-- Trust Badges -->
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-lowest p-4 rounded-lg flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl" data-weight="fill">shield</span>
+<span class="text-[10px] font-label uppercase tracking-widest text-on-surface-variant">Secure<br/>Checkout</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-lg flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl" data-weight="fill">eco</span>
+<span class="text-[10px] font-label uppercase tracking-widest text-on-surface-variant">Greener<br/>Shipping</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f5f3f0] dark:bg-slate-900 w-full pt-16 pb-8 mt-20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 max-w-7xl mx-auto">
+<div class="space-y-4">
+<div class="text-xl font-serif italic text-primary">escape corner</div>
+<p class="font-sans text-sm text-slate-600 dark:text-slate-400">A curated sanctuary for readers who seek beauty in the written word.</p>
+</div>
+<div class="space-y-4">
+<h4 class="font-serif text-lg text-on-surface">Explore</h4>
+<ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400 font-sans">
+<li class="hover:translate-x-1 transition-transform duration-200 cursor-pointer">Curated Lists</li>
+<li class="hover:translate-x-1 transition-transform duration-200 cursor-pointer">Gift Guides</li>
+<li class="hover:translate-x-1 transition-transform duration-200 cursor-pointer">Our Story</li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-serif text-lg text-on-surface">Policies</h4>
+<ul class="space-y-2 text-sm text-slate-600 dark:text-slate-400 font-sans">
+<li class="hover:translate-x-1 transition-transform duration-200 cursor-pointer">Privacy Policy</li>
+<li class="hover:translate-x-1 transition-transform duration-200 cursor-pointer">Terms of Service</li>
+<li class="hover:translate-x-1 transition-transform duration-200 cursor-pointer">Shipping &amp; Returns</li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-serif text-lg text-on-surface">Newsletter</h4>
+<p class="text-xs text-slate-500 mb-4">Join our inner circle for literary treats.</p>
+<div class="flex">
+<input class="bg-surface border-none rounded-l-lg px-3 py-2 text-xs w-full focus:ring-1 focus:ring-primary/30" placeholder="Email" type="email"/>
+<button class="bg-primary text-white px-4 rounded-r-lg text-xs hover:opacity-90">Join</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-outline-variant/10 text-center">
+<p class="text-xs font-sans text-slate-500">© 2024 escape corner. A Curated Sanctuary for Readers.</p>
+</div>
+</footer>
+<script src="site.js"></script>
+</body></html>

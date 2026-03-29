@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>escape corner | A Curated Sanctuary for Readers</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-fixed": "#3b473f",
+              "on-secondary-container": "#634c51",
+              "on-error-container": "#6e0a12",
+              "inverse-surface": "#0e0e0d",
+              "primary": "#44627f",
+              "surface-dim": "#dadad6",
+              "tertiary-fixed-dim": "#d2e0d4",
+              "error": "#a83836",
+              "secondary-fixed": "#fbdae1",
+              "secondary-container": "#fbdae1",
+              "on-tertiary-container": "#4d5a51",
+              "on-surface": "#313330",
+              "tertiary-dim": "#49564d",
+              "surface-container-high": "#e9e8e4",
+              "primary-dim": "#385673",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary": "#eefdf0",
+              "on-surface-variant": "#5e5f5c",
+              "primary-fixed": "#b9d7fa",
+              "error-dim": "#67040d",
+              "on-primary-fixed": "#183854",
+              "error-container": "#fa746f",
+              "tertiary-container": "#e1efe2",
+              "outline-variant": "#b2b2ae",
+              "on-secondary-fixed-variant": "#6d555b",
+              "primary-container": "#b9d7fa",
+              "on-secondary": "#fff7f7",
+              "outline": "#7a7b77",
+              "on-background": "#313330",
+              "inverse-on-surface": "#9e9d9a",
+              "surface-container": "#efeeea",
+              "surface-container-highest": "#e3e3de",
+              "surface-container-low": "#f5f3f0",
+              "secondary-fixed-dim": "#ecccd3",
+              "tertiary-fixed": "#e1efe2",
+              "secondary-dim": "#644d53",
+              "inverse-primary": "#b9d7fa",
+              "on-primary-container": "#2d4b68",
+              "surface": "#fbf9f6",
+              "on-primary-fixed-variant": "#375572",
+              "background": "#fbf9f6",
+              "on-error": "#fff7f6",
+              "surface-bright": "#fbf9f6",
+              "on-secondary-fixed": "#4f3a3f",
+              "on-tertiary-fixed-variant": "#57645a",
+              "secondary": "#71595f",
+              "on-primary": "#f7f9ff",
+              "surface-tint": "#44627f",
+              "primary-fixed-dim": "#abc9ec",
+              "surface-variant": "#e3e3de",
+              "tertiary": "#556259"
+            },
+            fontFamily: {
+              "headline": ["Newsreader"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+        .font-serif { font-family: 'Newsreader', serif; }
+        .font-sans { font-family: 'Manrope', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fbf9f6]/80 dark:bg-slate-950/80 backdrop-blur-md">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-serif italic text-[#44627f] dark:text-[#b9d7fa]">escape corner</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-sans tracking-widest uppercase text-xs text-slate-500 dark:text-slate-400 font-medium hover:text-[#44627f] transition-colors duration-300" href="#">Categories</a>
+<a class="font-sans tracking-widest uppercase text-xs text-slate-500 dark:text-slate-400 font-medium hover:text-[#44627f] transition-colors duration-300" href="#">Cart</a>
+<a class="font-sans tracking-widest uppercase text-xs text-slate-500 dark:text-slate-400 font-medium hover:text-[#44627f] transition-colors duration-300" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-[#44627f] dark:text-[#b9d7fa] hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+<button class="text-[#44627f] dark:text-[#b9d7fa] hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-24">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-8 py-20 flex flex-col md:flex-row items-center gap-16 overflow-hidden">
+<div class="w-full md:w-1/2">
+<span class="font-sans tracking-[0.2em] uppercase text-xs text-primary mb-4 block">A Curated Sanctuary</span>
+<h1 class="font-serif italic text-6xl md:text-8xl text-on-surface leading-tight mb-8">
+                    Welcome to <br/>escape corner
+                </h1>
+<p class="font-sans text-on-surface-variant max-w-md text-lg leading-relaxed mb-10">
+                    Find your next quiet adventure in our hand-picked collection of stories that move, inspire, and haunt.
+                </p>
+<button class="bg-gradient-to-tr from-primary to-primary-dim text-on-primary px-8 py-4 rounded-md font-sans font-medium tracking-wide hover:shadow-lg transition-all active:scale-95">
+                    Explore the Collection
+                </button>
+</div>
+<div class="w-full md:w-1/2 relative">
+<div class="absolute inset-0 bg-primary-container/20 rounded-full blur-3xl -z-10 transform scale-125"></div>
+<img class="w-full h-[600px] object-cover rounded-xl shadow-2xl transform md:rotate-3 hover:rotate-0 transition-transform duration-700" data-alt="Stack of vintage books on a rustic wooden table with soft morning sunlight streaming through a nearby window" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPC_eURf32dWXPbW1VNPO90ggJ6vf6eDGIUgwzmk03p-nFVyCjO0vjMygzHKNYFT1PedeoFRp2OotvnMFmiW0irDKQ2QesDljXis0DYHX5DcDVnfc5TaFck1UGncZ_UNOxFUGvNxiWDQT0BQB3qc4irYpSglRX-4ReFJ1uThkIVyFra30Z0ZqhpcME6ecDQNq3wz22VQdK-RBxJ1KvaD16E3kHT83whJFYRf6U86YHQ0HCjj3wOXkOgTn1RHYLK1f1yn_U9OKBgec"/>
+</div>
+</section>
+<!-- Bento Category Grid -->
+<section class="bg-surface-container-low py-32">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="font-serif italic text-4xl mb-4">Browse by Mood</h2>
+<p class="font-sans text-on-surface-variant">Every book is a different journey.</p>
+</div>
+<a class="font-sans text-primary font-semibold text-sm tracking-widest uppercase border-b border-primary/30 pb-1" href="#">View All Genres</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-6 h-auto md:h-[800px]">
+<!-- Friendship (Pastel Blue) -->
+<div class="md:col-span-2 md:row-span-1 bg-primary-container rounded-xl p-8 flex flex-col justify-between group cursor-pointer hover:bg-primary-container/80 transition-all relative overflow-hidden">
+<img class="absolute inset-0 h-full w-full object-cover opacity-25 transition-transform duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1200&q=80" alt="Friends reading together in a warm bookstore setting"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary-container via-primary-container/75 to-primary-container/40"></div>
+<div class="relative flex justify-between items-start">
+<span class="material-symbols-outlined text-on-primary-container text-4xl">group</span>
+<span class="material-symbols-outlined text-on-primary-container opacity-0 group-hover:opacity-100 transition-opacity">arrow_outward</span>
+</div>
+<div class="relative">
+<h3 class="font-serif italic text-3xl text-on-primary-container mb-2">Friendship</h3>
+<p class="font-sans text-on-primary-container/70 text-sm">Stories of bonds that never break.</p>
+</div>
+</div>
+<!-- Love Stories (Pastel Pink) -->
+<div class="md:col-span-1 md:row-span-1 bg-secondary-container rounded-xl p-8 flex flex-col justify-between group cursor-pointer hover:bg-secondary-container/80 transition-all relative overflow-hidden">
+<img class="absolute inset-0 h-full w-full object-cover opacity-25 transition-transform duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=900&q=80" alt="Romantic books with roses and soft pink light"/>
+<div class="absolute inset-0 bg-gradient-to-t from-secondary-container via-secondary-container/75 to-secondary-container/35"></div>
+<span class="material-symbols-outlined relative text-on-secondary-container text-4xl">favorite</span>
+<div class="relative">
+<h3 class="font-serif italic text-2xl text-on-secondary-container mb-2">Love Stories</h3>
+<p class="font-sans text-on-secondary-container/70 text-sm">Heartfelt narratives.</p>
+</div>
+</div>
+<!-- Motivational (Pastel Yellow) -->
+<div class="md:col-span-1 md:row-span-2 bg-tertiary-fixed rounded-xl p-8 flex flex-col justify-between group cursor-pointer hover:bg-tertiary-fixed/80 transition-all relative overflow-hidden">
+<img class="absolute inset-0 h-full w-full object-cover opacity-20 transition-transform duration-700 group-hover:scale-105" alt="Open notebook and coffee in warm sunlight for motivational reading" src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=900&q=80"/>
+<div class="absolute inset-0 bg-gradient-to-t from-tertiary-fixed via-tertiary-fixed/88 to-tertiary-fixed/45"></div>
+<span class="material-symbols-outlined relative text-on-tertiary-fixed text-4xl">lightbulb</span>
+<div class="relative flex flex-col gap-6">
+<div class="h-64 rounded-lg overflow-hidden bg-white/30">
+<img class="w-full h-full object-cover opacity-35" alt="Soft abstract paper texture for motivational category" src="https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=900&q=80"/>
+</div>
+<div class="relative">
+<h3 class="font-serif italic text-2xl text-on-tertiary-fixed mb-2">Motivational</h3>
+<p class="font-sans text-on-tertiary-fixed/70 text-sm">Fuel for your inner spark and daily growth.</p>
+</div>
+</div>
+</div>
+<!-- Horror (Pastel Purple) -->
+<div class="md:col-span-1 md:row-span-1 bg-surface-container-highest rounded-xl p-8 flex flex-col justify-between group cursor-pointer hover:bg-surface-container-high transition-all border-l-4 border-[#6d555b]/20 relative overflow-hidden">
+<img class="absolute inset-0 h-full w-full object-cover opacity-25 transition-transform duration-700 group-hover:scale-105" src="https://images.unsplash.com/photo-1509248961158-e54f6934749c?auto=format&fit=crop&w=900&q=80" alt="Dark gothic house and misty night scene for horror books"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-highest via-surface-container-highest/85 to-surface-container-highest/30"></div>
+<span class="material-symbols-outlined relative text-secondary-dim text-4xl">dark_mode</span>
+<div class="relative">
+<h3 class="font-serif italic text-2xl text-secondary-dim mb-2">Horror</h3>
+<p class="font-sans text-secondary-dim/70 text-sm">For the brave at heart.</p>
+</div>
+</div>
+<!-- Escape/Adventure (Pastel Green) -->
+<div class="md:col-span-2 md:row-span-1 bg-tertiary-container rounded-xl p-8 flex flex-col md:flex-row gap-8 group cursor-pointer hover:bg-tertiary-container/80 transition-all relative overflow-hidden">
+<img class="absolute inset-0 h-full w-full object-cover opacity-20 transition-transform duration-700 group-hover:scale-105" alt="Foggy mountain ranges for escape and adventure books" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80"/>
+<div class="absolute inset-0 bg-gradient-to-r from-tertiary-container via-tertiary-container/88 to-tertiary-container/55"></div>
+<div class="relative flex flex-col justify-between h-full md:w-1/2">
+<span class="material-symbols-outlined text-on-tertiary-container text-4xl">explore</span>
+<div>
+<h3 class="font-serif italic text-3xl text-on-tertiary-container mb-2">Escape &amp; Adventure</h3>
+<p class="font-sans text-on-tertiary-container/70 text-sm">Traverse new worlds and uncharted territories.</p>
+</div>
+</div>
+<div class="relative md:w-1/2 h-full rounded-lg overflow-hidden bg-white/30">
+<img class="w-full h-full object-cover opacity-45" alt="Layered mountain landscape for escape and adventure category" src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1200&q=80"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Books -->
+<section class="py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-20 text-center">
+<h2 class="font-serif italic text-5xl mb-6">Current Favorites</h2>
+<div class="w-24 h-px bg-primary/30 mx-auto"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+<!-- Book 1 -->
+<div class="group">
+<div class="aspect-[3/4] bg-surface-container-lowest overflow-hidden rounded-md mb-8 transition-all duration-500 group-hover:-translate-y-4 group-hover:shadow-2xl relative">
+<div class="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<img class="w-full h-full object-cover" data-alt="Elegant book cover with minimalist typography on textured cream paper background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAT2tdazOX6Ib9RQpabkkdcnCi1vV2eZsDLuJtkBiWmeOGwMiuf-nLRiKlqWbAq_8DTGcdJtIhUX1G2MLvzYhw2s5GBPUW2o5u6gDsBfk5V9fVS1mB0mfv4cbBBsfsP_P2AlwIlRnqXmhTIIY1KKZjAILx6dTMLn8sri_GHbnsDoWXyPAY2RPLkvli5idsM9PSI2Tz7HrF0l9Fiw-LFLyKMLHZl9-nquMAxz1QEi_rlcMYhtuUkCIOQgHHmUJdJ3gcgE23RymlqWEI"/>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-1 h-12 bg-primary-container rounded-full"></div>
+<div>
+<span class="font-sans text-xs tracking-widest uppercase text-on-surface-variant">Friendship</span>
+<h4 class="font-serif italic text-2xl mt-1 mb-2">The Quiet Bond</h4>
+<p class="font-sans text-sm text-on-surface-variant mb-4">by Eleanor Vance</p>
+<span class="font-sans font-bold text-primary">$24.00</span>
+</div>
+</div>
+</div>
+<!-- Book 2 -->
+<div class="group">
+<div class="aspect-[3/4] bg-surface-container-lowest overflow-hidden rounded-md mb-8 transition-all duration-500 group-hover:-translate-y-4 group-hover:shadow-2xl relative">
+<div class="absolute inset-0 bg-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<img class="w-full h-full object-cover" data-alt="Artistic book cover featuring abstract floral patterns in muted rose and gold tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuStPYecjsUSCarNnft5UOzb3rstRNJOHJ7_jw2VZ3i8pMfg065UGRUesdlwKmF8JLXL-Gfz6GDP-DiFbQsIDkvpAO7RndCHEeqpv6IzJNnsM17pBTnQTbCHpuyLT7BgIJbrvFRJgjUiDBITtistvgxyGfynzSM5EkR-YkiUjU_5quLCLiNZoXUAeUHUgGdIXp_IKosvh9tfvGbVDVeM9GuQfTNOnK7xgW_lPNfEXSsvPRxWEWih918TCL11HGlKZm1VYMAmX4Lpc"/>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-1 h-12 bg-secondary-container rounded-full"></div>
+<div>
+<span class="font-sans text-xs tracking-widest uppercase text-on-surface-variant">Love Stories</span>
+<h4 class="font-serif italic text-2xl mt-1 mb-2">Paper Hearts</h4>
+<p class="font-sans text-sm text-on-surface-variant mb-4">by Julian Thorne</p>
+<span class="font-sans font-bold text-primary">$18.50</span>
+</div>
+</div>
+</div>
+<!-- Book 3 -->
+<div class="group">
+<div class="aspect-[3/4] bg-surface-container-lowest overflow-hidden rounded-md mb-8 transition-all duration-500 group-hover:-translate-y-4 group-hover:shadow-2xl relative">
+<div class="absolute inset-0 bg-tertiary/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<img class="w-full h-full object-cover" data-alt="Old leather-bound book with gold embossing resting on a dark velvet surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDv37QBsiFEIxZOwly-6Z4apivQkL6PwoaxiJoAhIpBqndqi7e0oYSu55_jjG8toZh6eFlUOyVUkiZ_nMOpIq8nIdAdUvh8e1AKITv1fL6TNY_Ck6RlmKPCMalVNxWdEvLiRMyAoa6N4BFBCmWIoj3EUU29HMAUJ4dy3I1DQ83Zw1SMhocp3rxICmvmqGG3qwgYMLxX0jt_qRueqEi_H-TOxze0WFiq_5koODDxwoTWmH6X8OH7wpfkZ8kkvtwTEVkRFgD1KC6ZmlE"/>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-1 h-12 bg-tertiary-container rounded-full"></div>
+<div>
+<span class="font-sans text-xs tracking-widest uppercase text-on-surface-variant">Adventure</span>
+<h4 class="font-serif italic text-2xl mt-1 mb-2">The Last Compass</h4>
+<p class="font-sans text-sm text-on-surface-variant mb-4">by S.J. Marrow</p>
+<span class="font-sans font-bold text-primary">$22.00</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter Overlay Section -->
+<section class="max-w-7xl mx-auto px-8 py-32">
+<div class="bg-surface-container-low rounded-xl p-16 relative overflow-hidden flex flex-col md:flex-row items-center gap-12">
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary-container/10 rounded-full -mr-32 -mt-32 blur-3xl"></div>
+<div class="md:w-1/2">
+<h2 class="font-serif italic text-4xl mb-6">Stay within the corner.</h2>
+<p class="font-sans text-on-surface-variant leading-relaxed">Join our weekly newsletter for curated reading lists, exclusive author interviews, and quiet moments of reflection.</p>
+</div>
+<div class="md:w-1/2 w-full">
+<div class="flex flex-col sm:flex-row gap-4">
+<input class="flex-grow bg-surface-container-high border-none rounded-md px-6 py-4 focus:ring-2 focus:ring-primary/30 outline-none font-sans text-sm" placeholder="Your email address" type="email"/>
+<button class="bg-primary text-on-primary px-8 py-4 rounded-md font-sans text-sm font-semibold tracking-widest uppercase hover:bg-primary-dim transition-colors">Join</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f5f3f0] dark:bg-slate-900 w-full pt-16 pb-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 max-w-7xl mx-auto">
+<div class="space-y-6">
+<div class="text-xl font-serif italic text-[#44627f]">escape corner</div>
+<p class="font-sans text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                    A curated digital sanctuary where every book is chosen to help you find your quiet place.
+                </p>
+</div>
+<div class="space-y-6">
+<h4 class="font-serif text-lg text-[#44627f]">Shop</h4>
+<ul class="space-y-4">
+<li><a class="font-sans text-sm text-slate-600 dark:text-slate-400 hover:translate-x-1 transition-transform duration-200 block" href="#">Best Sellers</a></li>
+<li><a class="font-sans text-sm text-slate-600 dark:text-slate-400 hover:translate-x-1 transition-transform duration-200 block" href="#">New Arrivals</a></li>
+<li><a class="font-sans text-sm text-slate-600 dark:text-slate-400 hover:translate-x-1 transition-transform duration-200 block" href="#">Book Club Sets</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="font-serif text-lg text-[#44627f]">Information</h4>
+<ul class="space-y-4">
+<li><a class="font-sans text-sm text-slate-600 dark:text-slate-400 hover:translate-x-1 transition-transform duration-200 block" href="#">Privacy Policy</a></li>
+<li><a class="font-sans text-sm text-slate-600 dark:text-slate-400 hover:translate-x-1 transition-transform duration-200 block" href="#">Terms of Service</a></li>
+<li><a class="font-sans text-sm text-slate-600 dark:text-slate-400 hover:translate-x-1 transition-transform duration-200 block" href="#">Shipping &amp; Returns</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="font-serif text-lg text-[#44627f]">Connect</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined text-sm">alternate_email</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-all" href="#">
+<span class="material-symbols-outlined text-sm">share</span>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-outline-variant/10">
+<p class="font-sans text-sm text-slate-600 dark:text-slate-400 text-center">© 2024 escape corner. A Curated Sanctuary for Readers.</p>
+</div>
+</footer>
+<script src="site.js"></script>
+</body></html>

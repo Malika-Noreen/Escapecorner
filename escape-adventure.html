@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Adventure - escape corner</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-dim": "#dadad6",
+              "on-tertiary": "#eefdf0",
+              "inverse-surface": "#0e0e0d",
+              "outline": "#7a7b77",
+              "on-primary-fixed": "#183854",
+              "tertiary-fixed-dim": "#d2e0d4",
+              "on-secondary": "#fff7f7",
+              "surface": "#fbf9f6",
+              "on-secondary-fixed-variant": "#6d555b",
+              "on-error": "#fff7f6",
+              "surface-container-highest": "#e3e3de",
+              "tertiary-container": "#e1efe2",
+              "primary-fixed-dim": "#abc9ec",
+              "on-surface": "#313330",
+              "outline-variant": "#b2b2ae",
+              "surface-bright": "#fbf9f6",
+              "secondary-dim": "#644d53",
+              "tertiary-fixed": "#e1efe2",
+              "error-container": "#fa746f",
+              "error": "#a83836",
+              "error-dim": "#67040d",
+              "on-tertiary-fixed": "#3b473f",
+              "on-tertiary-container": "#4d5a51",
+              "secondary-fixed": "#fbdae1",
+              "on-secondary-container": "#634c51",
+              "secondary": "#71595f",
+              "surface-container-low": "#f5f3f0",
+              "surface-container": "#efeeea",
+              "inverse-on-surface": "#9e9d9a",
+              "on-primary-container": "#2d4b68",
+              "surface-tint": "#44627f",
+              "surface-variant": "#e3e3de",
+              "secondary-container": "#fbdae1",
+              "tertiary-dim": "#49564d",
+              "secondary-fixed-dim": "#ecccd3",
+              "on-surface-variant": "#5e5f5c",
+              "on-primary-fixed-variant": "#375572",
+              "on-tertiary-fixed-variant": "#57645a",
+              "primary": "#44627f",
+              "primary-dim": "#385673",
+              "primary-fixed": "#b9d7fa",
+              "background": "#fbf9f6",
+              "primary-container": "#b9d7fa",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-high": "#e9e8e4",
+              "tertiary": "#556259",
+              "on-primary": "#f7f9ff",
+              "inverse-primary": "#b9d7fa",
+              "on-background": "#313330",
+              "on-error-container": "#6e0a12",
+              "on-secondary-fixed": "#4f3a3f"
+            },
+            fontFamily: {
+              "headline": ["Newsreader"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #fbf9f6;
+            color: #313330;
+        }
+        .editorial-shadow {
+            box-shadow: 0 10px 40px rgba(49, 51, 48, 0.06);
+        }
+        .adventure-gradient {
+            background: linear-gradient(135deg, #44627f 0%, #b9d7fa 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fbf9f6]/80 dark:bg-slate-950/80 backdrop-blur-md">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-serif italic text-[#44627f] dark:text-[#b9d7fa]">escape corner</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-[#44627f] dark:text-[#b9d7fa] border-b-2 border-[#44627f] pb-1 font-sans tracking-widest uppercase text-xs Manrope" href="#">Categories</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium font-sans tracking-widest uppercase text-xs Manrope hover:text-[#44627f] transition-colors duration-300" href="#">Cart</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium font-sans tracking-widest uppercase text-xs Manrope hover:text-[#44627f] transition-colors duration-300" href="#">Contact</a>
+</div>
+<div class="flex items-center space-x-6 text-[#44627f] dark:text-[#b9d7fa]">
+<button class="material-symbols-outlined hover:text-[#44627f] transition-colors duration-300">shopping_cart</button>
+<button class="material-symbols-outlined hover:text-[#44627f] transition-colors duration-300">person</button>
+</div>
+</div>
+</nav>
+<main class="pt-24 min-h-screen">
+<!-- Hero Section -->
+<section class="relative px-8 py-16 max-w-7xl mx-auto overflow-hidden">
+<div class="absolute top-0 right-0 w-1/2 h-full bg-tertiary-container -z-10 opacity-60 rounded-bl-[10rem]"></div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div>
+<span class="font-label text-xs uppercase tracking-[0.2em] text-on-tertiary-fixed-variant mb-4 block">Collection 2024</span>
+<h1 class="font-headline text-6xl md:text-8xl italic text-primary leading-tight mb-6">Escape &amp; Adventure</h1>
+<p class="font-body text-lg text-on-surface-variant max-w-md leading-relaxed mb-8">
+                        Journey through uncharted territories and wild landscapes. Curated stories of resilience and discovery.
+                    </p>
+<div class="flex space-x-4">
+<span class="rounded-full bg-tertiary-container px-6 py-2 text-sm font-label text-on-tertiary-container">Mountain Peaks</span>
+<span class="rounded-full bg-surface-container-high px-6 py-2 text-sm font-label text-on-surface-variant">Deep Sea</span>
+<span class="rounded-full bg-surface-container-high px-6 py-2 text-sm font-label text-on-surface-variant">Forest Echoes</span>
+</div>
+</div>
+<div class="relative">
+<img alt="Stunning mountain range" class="rounded-xl w-full h-[500px] object-cover editorial-shadow" data-alt="Cinematic landscape of snow-capped mountain peaks at dawn with mist rising from pine forests in foreground, ethereal soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3IMjDNtHDUv45GyCBaZhFUrNclzjOqlLL6qnD7Veh-gFRAI-01OasGGdqTXrn7I57e7dZnMads6eUc-Tm2BPSI80uHMH2Mgv-JUGnunxuziJ8n5LaxWesre2qbpXfRf_lVjT02VnsKOgySyAjwMJeO0oSrO4DUsbkSX644hOkH4Z0l2OU4xjUt5OYNzfAXI-_L-hpfqVcvbk8YdjYz13lnBv9KHpKkXSF4XIUdPzPu-cxEhsGwJ6wxEXVNJaov5cF0_jT_K30wDU"/>
+<div class="absolute -bottom-6 -left-6 bg-surface-container-lowest p-6 rounded-lg editorial-shadow max-w-[200px]">
+<p class="font-headline text-xl italic mb-1">Editors Choice</p>
+<p class="font-body text-xs text-on-surface-variant">The Great Unknown by Elias Thorne</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Book Grid -->
+<section class="px-8 py-16 max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="font-headline text-4xl text-primary">The Adventure Shelf</h2>
+<div class="h-1 w-24 bg-tertiary-container mt-4"></div>
+</div>
+<button class="font-label text-xs uppercase tracking-widest text-on-surface-variant flex items-center gap-2 hover:translate-x-1 transition-transform">
+                    Sort by Price <span class="material-symbols-outlined text-sm">expand_more</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-24">
+<!-- Book Card 1 -->
+<div class="group">
+<div class="relative mb-8 bg-surface-container-low p-8 rounded-xl transition-all duration-500 hover:bg-surface-container-lowest">
+<div class="absolute left-0 top-1/4 w-1 h-24 bg-tertiary-container transition-all group-hover:h-32"></div>
+<div class="aspect-[3/4] overflow-hidden rounded-md editorial-shadow group-hover:-translate-y-4 transition-transform duration-500">
+<img alt="Book cover" class="w-full h-full object-cover" data-alt="Minimalist book cover design showing a small lonely hiker silhouette on a vast white snowy slope with clean elegant serif typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC8Q932d33I7tPgwYMX80nvpH6dYraym6J3XtsvICRz1Z9hDcmlKaEEw7TdYi7ITPg9dGt7p1U9g1Yelg2EDgmle2dGyg4F_TH71jD8Yzu71zJpxWQuzP4OKPfoBL7SCd3mG9pVO7DU9h1wAvCYhAdr0rCv8n_iZElxgH5J7WPVr36-aL8J2v2eku8TsAJy-Xh7kJYSn53gd8JMBmCiJtz5EMu8xsbANinRouls3Bgy3Caem1K5Lo58kRYuBQNz7jpEbO7iajfaRQc"/>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-2xl mb-2 text-on-surface">The Ridge</h3>
+<p class="font-body text-sm text-on-surface-variant mb-4">William H. Roberts</p>
+<p class="font-body font-bold text-primary">$28.00</p>
+</div>
+<button class="adventure-gradient text-on-primary p-3 rounded-lg editorial-shadow hover:scale-105 transition-transform flex items-center">
+<span class="material-symbols-outlined text-xl">shopping_cart</span>
+</button>
+</div>
+</div>
+<!-- Book Card 2 -->
+<div class="group">
+<div class="relative mb-8 bg-surface-container-low p-8 rounded-xl transition-all duration-500 hover:bg-surface-container-lowest">
+<div class="absolute left-0 top-1/4 w-1 h-24 bg-tertiary-container transition-all group-hover:h-32"></div>
+<div class="aspect-[3/4] overflow-hidden rounded-md editorial-shadow group-hover:-translate-y-4 transition-transform duration-500">
+<img alt="Book cover" class="w-full h-full object-cover" data-alt="Vintage style adventure book cover with an illustration of an old wooden compass on aged parchment background, rich textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCterE3_EYsOY_r0xXQCTCK43rBuVy1JMuzyQD_2lYZxllYtJHF2BqophL69eIz3df_H6wQ6RSage8kfoZyv5jY7PCBQ_PpeIHKN23Avo3Ggi4Mk1vmzO47SOvK0rOR0yX9crcC3E7vApMK3YsSB-Nuaph56OaVEcZIKo_g4vXe4e2Wu-46HRmQEg3JMLm9oq35c7q96YvJZjIiT4tvVCqKTpmGuCL59A45mtODjYxcwoJLGvDlMnnyRDSuwqgVdH4KX2Ltn4NQnyo"/>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-2xl mb-2 text-on-surface">Wayfinder</h3>
+<p class="font-body text-sm text-on-surface-variant mb-4">Sarah Jenkins</p>
+<p class="font-body font-bold text-primary">$24.50</p>
+</div>
+<button class="adventure-gradient text-on-primary p-3 rounded-lg editorial-shadow hover:scale-105 transition-transform flex items-center">
+<span class="material-symbols-outlined text-xl">shopping_cart</span>
+</button>
+</div>
+</div>
+<!-- Book Card 3 -->
+<div class="group">
+<div class="relative mb-8 bg-surface-container-low p-8 rounded-xl transition-all duration-500 hover:bg-surface-container-lowest">
+<div class="absolute left-0 top-1/4 w-1 h-24 bg-tertiary-container transition-all group-hover:h-32"></div>
+<div class="aspect-[3/4] overflow-hidden rounded-md editorial-shadow group-hover:-translate-y-4 transition-transform duration-500">
+<img alt="Book cover" class="w-full h-full object-cover" data-alt="Atmospheric book cover featuring a dark green dense pine forest shrouded in thick morning fog with thin white font title" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARpdIFD0pLe0Sp3LR9fBQDauyjqvT7l0pqZFsmjuCDoq6DRyrV9IRdlGt8wCaeUmd-QcD1li1R_sUiiooldeOMu-roCLogQYiztDbFn9GakeMTjM90QmRV4BDGVUVtw6Yc42YiQdwAe9THHz2QhguZ4-zohc23pocst0xsdZ0_GTREIurWyFnT_co9SJf2NKYabtT90Q6dkKSWsbci8jgymo4k2Ox3w-LLdLJGRdGwiY91U_2LTCqprKKPUS-DO_NQnTxHn1gyqMc"/>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-2xl mb-2 text-on-surface">Silent Woods</h3>
+<p class="font-body text-sm text-on-surface-variant mb-4">Arthur Miller</p>
+<p class="font-body font-bold text-primary">$32.00</p>
+</div>
+<button class="adventure-gradient text-on-primary p-3 rounded-lg editorial-shadow hover:scale-105 transition-transform flex items-center">
+<span class="material-symbols-outlined text-xl">shopping_cart</span>
+</button>
+</div>
+</div>
+<!-- Book Card 4 -->
+<div class="group">
+<div class="relative mb-8 bg-surface-container-low p-8 rounded-xl transition-all duration-500 hover:bg-surface-container-lowest">
+<div class="absolute left-0 top-1/4 w-1 h-24 bg-tertiary-container transition-all group-hover:h-32"></div>
+<div class="aspect-[3/4] overflow-hidden rounded-md editorial-shadow group-hover:-translate-y-4 transition-transform duration-500">
+<img alt="Book cover" class="w-full h-full object-cover" data-alt="Adventure book cover showing a rugged mountain range against a vibrant orange sunset sky, dramatic and cinematic photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCE4t8ri6TymayIqsnvFEyDMufCn41v8A8gcuHU9P99G8Xp6KHEQsqL5l3Mg2KOkO43eMevdvDjwXhIfX4nBf9ocVdfL2RUDWTi3T4vSgPs8IYbVP21rmRCDR1TiIZRbCT7uNOIiOwpuTIOgQo2aUc_IaUmZCGXOekRzfnr4nRJLUy8qmQumWZ2RtS5iuG9cS1WV9WkUuxXuxaPjnhrz34VgXrM41wXCInSG4yn60IrfgpaJMIrEPw43rasMbANnODlM2LBKBsdhRc"/>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-2xl mb-2 text-on-surface">Peak Pursuit</h3>
+<p class="font-body text-sm text-on-surface-variant mb-4">George Byron</p>
+<p class="font-body font-bold text-primary">$19.99</p>
+</div>
+<button class="adventure-gradient text-on-primary p-3 rounded-lg editorial-shadow hover:scale-105 transition-transform flex items-center">
+<span class="material-symbols-outlined text-xl">shopping_cart</span>
+</button>
+</div>
+</div>
+<!-- Book Card 5 -->
+<div class="group">
+<div class="relative mb-8 bg-surface-container-low p-8 rounded-xl transition-all duration-500 hover:bg-surface-container-lowest">
+<div class="absolute left-0 top-1/4 w-1 h-24 bg-tertiary-container transition-all group-hover:h-32"></div>
+<div class="aspect-[3/4] overflow-hidden rounded-md editorial-shadow group-hover:-translate-y-4 transition-transform duration-500">
+<img alt="Book cover" class="w-full h-full object-cover" data-alt="Book cover with a serene lake reflective surface and a small rowing boat, soft turquoise and blue pastel tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfxSuBfJT5pRuSp9d3c-OGZIkB-ERWdvXASLEYa85uuWdFyz_vgulFlxCVnsv_-kFtSzPDBfzeOJNsR6g_LaOgMk5S-jG48WzokG0NclF0fjE3TWyPL-nUcW5Wa3hUREwpxF4Pxei9EON4gwiHQKXWB96QxKVOir9g53JmHVBRmHpoqbb6ZhHec4vHFuvxD0zX1REBeNo2BWalATXyCgss4SQHrVV1D2r8xEe1pK6bOi2EG7anwuOCO_5zlqeui54N9pFv1p9P4RA"/>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-2xl mb-2 text-on-surface">Azure Horizon</h3>
+<p class="font-body text-sm text-on-surface-variant mb-4">Elizabeth Swann</p>
+<p class="font-body font-bold text-primary">$26.00</p>
+</div>
+<button class="adventure-gradient text-on-primary p-3 rounded-lg editorial-shadow hover:scale-105 transition-transform flex items-center">
+<span class="material-symbols-outlined text-xl">shopping_cart</span>
+</button>
+</div>
+</div>
+<!-- Book Card 6 -->
+<div class="group">
+<div class="relative mb-8 bg-surface-container-low p-8 rounded-xl transition-all duration-500 hover:bg-surface-container-lowest">
+<div class="absolute left-0 top-1/4 w-1 h-24 bg-tertiary-container transition-all group-hover:h-32"></div>
+<div class="aspect-[3/4] overflow-hidden rounded-md editorial-shadow group-hover:-translate-y-4 transition-transform duration-500">
+<img alt="Book cover" class="w-full h-full object-cover" data-alt="Editorial book cover showing a deep canyon with red rock layers and a tiny eagle soaring in the vast blue sky above" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0CJDnVnXdfooskepoY45O5XVKZ1csNLsJ8Z_479ZwFJk9VD1CWHeY_E4aUUncfkNheFgln5pzd_sClJgXJsFRiMJuyo2Vhn-weYTyh8buO_iE2Wn5C5gHM4Kl0fxBlPhy_uYFTlg60_uTpGElKwhZfrb2N94iNnJsQtn1vvzvrwxoUpbNBxVyV37JQ5tsCFp3IBW2eV4UCAg9UabcYZntSYmxjcE1lHnyD9uQg1mgG-brQzi3pNgZXK6N1xcPR31tG6NZwczrpwQ"/>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-headline text-2xl mb-2 text-on-surface">Canyon Echo</h3>
+<p class="font-body text-sm text-on-surface-variant mb-4">James Carter</p>
+<p class="font-body font-bold text-primary">$22.00</p>
+</div>
+<button class="adventure-gradient text-on-primary p-3 rounded-lg editorial-shadow hover:scale-105 transition-transform flex items-center">
+<span class="material-symbols-outlined text-xl">shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / Community Section -->
+<section class="mt-32 px-8 py-24 bg-surface-container-low text-center">
+<div class="max-w-2xl mx-auto">
+<h2 class="font-headline text-5xl italic text-primary mb-6">Join the Expedition</h2>
+<p class="font-body text-on-surface-variant mb-12">Receive a hand-picked adventure recommendation once a month, straight from our curators.</p>
+<div class="flex flex-col md:flex-row gap-4">
+<input class="flex-grow bg-surface-container-high border-none px-6 py-4 rounded-md focus:ring-1 focus:ring-primary/30" placeholder="Your email address" type="email"/>
+<button class="adventure-gradient text-on-primary px-10 py-4 rounded-md font-label text-xs uppercase tracking-widest shadow-lg">Subscribe</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-16 pb-8 bg-[#f5f3f0] dark:bg-slate-900">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="text-xl font-serif italic text-[#44627f] mb-4">escape corner</div>
+<p class="font-sans text-sm Manrope text-slate-600 dark:text-slate-400 leading-relaxed">A Curated Sanctuary for Readers.</p>
+</div>
+<div>
+<h4 class="font-serif Newsreader text-lg text-[#44627f] dark:text-[#b9d7fa] mb-6">Legal</h4>
+<ul class="space-y-4">
+<li><a class="font-sans text-sm Manrope text-slate-600 dark:text-slate-400 hover:translate-x-1 transition-transform duration-200 block" href="#">Privacy Policy</a></li>
+<li><a class="font-sans text-sm Manrope text-slate-600 dark:text-slate-400 hover:translate-x-1 transition-transform duration-200 block" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-serif Newsreader text-lg text-[#44627f] dark:text-[#b9d7fa] mb-6">Support</h4>
+<ul class="space-y-4">
+<li><a class="font-sans text-sm Manrope text-slate-600 dark:text-slate-400 hover:translate-x-1 transition-transform duration-200 block" href="#">Shipping &amp; Returns</a></li>
+<li><a class="font-sans text-sm Manrope text-slate-600 dark:text-slate-400 hover:translate-x-1 transition-transform duration-200 block" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-serif Newsreader text-lg text-[#44627f] dark:text-[#b9d7fa] mb-6">Explore</h4>
+<ul class="space-y-4">
+<li><a class="font-sans text-sm Manrope text-slate-600 dark:text-slate-400 hover:translate-x-1 transition-transform duration-200 block" href="#">Newsletter</a></li>
+<li><a class="font-sans text-sm Manrope text-slate-600 dark:text-slate-400 hover:translate-x-1 transition-transform duration-200 block" href="#">Journal</a></li>
+</ul>
+</div>
+</div>
+<div class="mt-16 pt-8 border-t border-slate-200 dark:border-slate-800 text-center max-w-7xl mx-auto">
+<p class="font-sans text-sm Manrope text-slate-500 dark:text-slate-400">© 2024 escape corner. A Curated Sanctuary for Readers.</p>
+</div>
+</footer>
+<script src="site.js"></script>
+</body></html>

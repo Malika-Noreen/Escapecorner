@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us - escape corner</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-dim": "#dadad6",
+              "on-tertiary": "#eefdf0",
+              "inverse-surface": "#0e0e0d",
+              "outline": "#7a7b77",
+              "on-primary-fixed": "#183854",
+              "tertiary-fixed-dim": "#d2e0d4",
+              "on-secondary": "#fff7f7",
+              "surface": "#fbf9f6",
+              "on-secondary-fixed-variant": "#6d555b",
+              "on-error": "#fff7f6",
+              "surface-container-highest": "#e3e3de",
+              "tertiary-container": "#e1efe2",
+              "primary-fixed-dim": "#abc9ec",
+              "on-surface": "#313330",
+              "outline-variant": "#b2b2ae",
+              "surface-bright": "#fbf9f6",
+              "secondary-dim": "#644d53",
+              "tertiary-fixed": "#e1efe2",
+              "error-container": "#fa746f",
+              "error": "#a83836",
+              "error-dim": "#67040d",
+              "on-tertiary-fixed": "#3b473f",
+              "on-tertiary-container": "#4d5a51",
+              "secondary-fixed": "#fbdae1",
+              "on-secondary-container": "#634c51",
+              "secondary": "#71595f",
+              "surface-container-low": "#f5f3f0",
+              "surface-container": "#efeeea",
+              "inverse-on-surface": "#9e9d9a",
+              "on-primary-container": "#2d4b68",
+              "surface-tint": "#44627f",
+              "surface-variant": "#e3e3de",
+              "secondary-container": "#fbdae1",
+              "tertiary-dim": "#49564d",
+              "secondary-fixed-dim": "#ecccd3",
+              "on-surface-variant": "#5e5f5c",
+              "on-primary-fixed-variant": "#375572",
+              "on-tertiary-fixed-variant": "#57645a",
+              "primary": "#44627f",
+              "primary-dim": "#385673",
+              "primary-fixed": "#b9d7fa",
+              "background": "#fbf9f6",
+              "primary-container": "#b9d7fa",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-high": "#e9e8e4",
+              "tertiary": "#556259",
+              "on-primary": "#f7f9ff",
+              "inverse-primary": "#b9d7fa",
+              "on-background": "#313330",
+              "on-error-container": "#6e0a12",
+              "on-secondary-fixed": "#4f3a3f"
+            },
+            fontFamily: {
+              "headline": ["Newsreader"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .serif-italic { font-family: 'Newsreader', serif; font-style: italic; }
+        .sans-tracking { font-family: 'Manrope', sans-serif; letter-spacing: 0.05rem; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fbf9f6]/80 dark:bg-slate-950/80 backdrop-blur-md">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-8">
+<a class="text-2xl font-serif italic text-[#44627f] dark:text-[#b9d7fa]" href="#">escape corner</a>
+<div class="hidden md:flex gap-6 items-center">
+<a class="text-slate-500 dark:text-slate-400 font-medium font-sans tracking-widest uppercase text-xs Manrope hover:text-[#44627f] transition-colors duration-300" href="#">Categories</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium font-sans tracking-widest uppercase text-xs Manrope hover:text-[#44627f] transition-colors duration-300" href="#">Cart</a>
+<a class="text-[#44627f] dark:text-[#b9d7fa] border-b-2 border-[#44627f] pb-1 font-sans tracking-widest uppercase text-xs Manrope" href="#">Contact</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="text-[#44627f] hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+<button class="text-[#44627f] hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Hero Section -->
+<section class="max-w-7xl mx-auto px-8 mb-24 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7">
+<span class="text-xs font-label uppercase tracking-widest text-primary mb-4 block">Reach Out</span>
+<h1 class="text-6xl md:text-8xl font-headline italic text-on-surface leading-tight mb-8">Let’s start a <br/>conversation.</h1>
+<p class="text-lg text-on-surface-variant max-w-xl leading-relaxed">Whether you are searching for a rare edition, tracking an order, or simply want to share your latest literary discovery, our sanctuary doors are always open.</p>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] overflow-hidden rounded-xl bg-surface-container-low">
+<img alt="Interior of a boutique bookstore" class="w-full h-full object-cover grayscale-[20%] hover:grayscale-0 transition-all duration-700" data-alt="Soft-lit interior of a high-end boutique bookstore with floor-to-ceiling wooden shelves, plush velvet armchairs, and warm ambient light filtering through large windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdEfANSUPFGrbfv5p4LCZKANkW7qdAxDQuDoSLWH5kGURvvqGnOj3WAahhEUCMmL8NDu-d_PbfUt8nWwuS5LQPZCC6nBxRlwou5wpa8gKzFw6POr7lVqE4loAUHkzDplJh5ox3X46zaK_8I3eCiS5h6T7IX9omO9k4edqKf_5IjznuGB0NE1EA_fsufsPMuDER27SzVk6dDZCznNUabh3atBEUFZZ-eGQ8ng_utXRhMEZVfNSziRYT2jsRLSipJR0sOMMmU98IeMk"/>
+</div>
+<!-- Floating Decorative Element -->
+<div class="absolute -bottom-6 -left-6 w-32 h-32 bg-secondary-container rounded-lg -z-10"></div>
+</div>
+</section>
+<!-- Form and Info Bento Grid -->
+<section class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Contact Form Card -->
+<div class="lg:col-span-2 bg-surface-container-lowest p-10 md:p-16 rounded-xl">
+<h2 class="text-3xl font-headline italic mb-12">Send a Message</h2>
+<form class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Name</label>
+<input class="w-full bg-surface-container-low border-none rounded-md px-4 py-3 focus:ring-2 focus:ring-primary/30 transition-shadow outline-none" placeholder="Julian Barnes" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Email</label>
+<input class="w-full bg-surface-container-low border-none rounded-md px-4 py-3 focus:ring-2 focus:ring-primary/30 transition-shadow outline-none" placeholder="hello@reader.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-label uppercase tracking-widest text-on-surface-variant">Message</label>
+<textarea class="w-full bg-surface-container-low border-none rounded-md px-4 py-3 focus:ring-2 focus:ring-primary/30 transition-shadow outline-none resize-none" placeholder="What's on your mind?" rows="5"></textarea>
+</div>
+<button class="bg-gradient-to-br from-primary to-primary-dim text-on-primary px-10 py-4 rounded-md font-label text-sm uppercase tracking-widest hover:opacity-90 transition-all shadow-lg shadow-primary/10" type="submit">
+                        Deliver Inquiry
+                    </button>
+</form>
+</div>
+<!-- Sidebar Info Column -->
+<div class="space-y-8">
+<!-- Location Info -->
+<div class="bg-surface-container-low p-8 rounded-xl relative overflow-hidden">
+<div class="absolute top-0 right-0 w-24 h-24 bg-tertiary-container/30 rounded-full -mr-12 -mt-12"></div>
+<h3 class="text-xl font-headline italic mb-6">The Sanctuary</h3>
+<div class="space-y-6">
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+<p class="text-on-surface-variant text-sm leading-relaxed">
+                                42 Bibliophile Lane,<br/>
+                                Bloomsbury District,<br/>
+                                London, WC1B 3DA
+                            </p>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="mail">mail</span>
+<p class="text-on-surface-variant text-sm">hello@escapecorner.com</p>
+</div>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="call">call</span>
+<p class="text-on-surface-variant text-sm">+44 (0) 20 7946 0123</p>
+</div>
+</div>
+</div>
+<!-- Opening Hours -->
+<div class="bg-surface-container-lowest p-8 rounded-xl">
+<h3 class="text-xl font-headline italic mb-6">Hours of Quiet</h3>
+<ul class="space-y-4 text-sm font-body text-on-surface-variant">
+<li class="flex justify-between border-b border-outline-variant/10 pb-2">
+<span>Monday — Friday</span>
+<span class="text-on-surface">10:00 — 19:00</span>
+</li>
+<li class="flex justify-between border-b border-outline-variant/10 pb-2">
+<span>Saturday</span>
+<span class="text-on-surface">11:00 — 18:00</span>
+</li>
+<li class="flex justify-between pb-2">
+<span>Sunday</span>
+<span class="text-on-surface italic">By Appointment</span>
+</li>
+</ul>
+</div>
+<!-- Map Placeholder Image -->
+<div class="aspect-square rounded-xl overflow-hidden grayscale">
+<img alt="Map location" class="w-full h-full object-cover" data-alt="Minimalist artistic black and white street map of London Bloomsbury district showing elegant grid lines and park spaces" data-location="London" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1kNfkPRmiKiTUtsEeDLGtr8Ih9gO6lA4cEPyxE1ZPP35v9oBDoHGj7KWF9uptdpLD7h62TjHRmjtWj9AlXpkZVoSh5YJcQVMOFskAOBXal4thQf_pvi_qP4bf9FtrcK78qSl5LQ8eNSTTlhJxQMclZ9sI3NJNdw8THoAOTDgOn8KD--P-hyqJmCC_L_dvbCCNVyLHdVZ-XfOGYpN3FNcxF9O-jBfjPf5OV7exc5hYQAyH6b9DeiOUW8RWPDi9WTDPBVR3HKPTLK4"/>
+</div>
+</div>
+</section>
+<!-- FAQ or Help Section -->
+<section class="max-w-7xl mx-auto px-8 mt-24">
+<div class="bg-primary-container/20 p-12 rounded-xl text-center">
+<h2 class="text-2xl font-headline italic mb-4">Need immediate assistance?</h2>
+<p class="text-on-surface-variant mb-8 max-w-2xl mx-auto">Our curated FAQ section covers shipping durations, our book selection process, and information regarding our rare editions collection.</p>
+<a class="inline-flex items-center gap-2 text-primary font-label uppercase text-xs tracking-widest font-bold hover:underline" href="#">
+                    View Knowledge Base
+                    <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f5f3f0] dark:bg-slate-900 w-full pt-16 pb-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 max-w-7xl mx-auto">
+<div class="space-y-6">
+<span class="text-xl font-serif italic text-[#44627f]">escape corner</span>
+<p class="font-sans text-sm Manrope text-slate-600 dark:text-slate-400 leading-relaxed">
+                    A curated sanctuary for the dedicated reader. We specialize in finding the books that find you.
+                </p>
+</div>
+<div>
+<h4 class="font-serif Newsreader text-[#44627f] dark:text-[#b9d7fa] mb-6">Service</h4>
+<ul class="space-y-3 font-sans text-sm Manrope">
+<li><a class="text-slate-600 dark:text-slate-400 hover:translate-x-1 transition-transform duration-200 block" href="#">Shipping &amp; Returns</a></li>
+<li><a class="text-slate-600 dark:text-slate-400 hover:translate-x-1 transition-transform duration-200 block" href="#">Newsletter</a></li>
+<li><a class="text-slate-600 dark:text-slate-400 hover:translate-x-1 transition-transform duration-200 block" href="#">Book Sourcing</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-serif Newsreader text-[#44627f] dark:text-[#b9d7fa] mb-6">Legal</h4>
+<ul class="space-y-3 font-sans text-sm Manrope">
+<li><a class="text-slate-600 dark:text-slate-400 hover:translate-x-1 transition-transform duration-200 block" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-600 dark:text-slate-400 hover:translate-x-1 transition-transform duration-200 block" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-serif Newsreader text-[#44627f] dark:text-[#b9d7fa] mb-6">Follow</h4>
+<div class="flex gap-4">
+<a class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="share">share</span>
+</a>
+<a class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-primary hover:bg-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-lg" data-icon="photo_camera">photo_camera</span>
+</a>
+</div>
+</div>
+</div>
+<div class="mt-16 px-8 max-w-7xl mx-auto border-t border-outline-variant/10 pt-8 text-center md:text-left">
+<p class="font-sans text-xs Manrope text-slate-500 uppercase tracking-widest">© 2024 escape corner. A Curated Sanctuary for Readers.</p>
+</div>
+</footer>
+<script src="site.js"></script>
+</body></html>

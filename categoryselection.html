@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>escape corner | Browse Categories</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;1,400;1,600&amp;family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-fixed": "#3b473f",
+              "on-secondary-container": "#634c51",
+              "on-error-container": "#6e0a12",
+              "inverse-surface": "#0e0e0d",
+              "primary": "#44627f",
+              "surface-dim": "#dadad6",
+              "tertiary-fixed-dim": "#d2e0d4",
+              "error": "#a83836",
+              "secondary-fixed": "#fbdae1",
+              "secondary-container": "#fbdae1",
+              "on-tertiary-container": "#4d5a51",
+              "on-surface": "#313330",
+              "tertiary-dim": "#49564d",
+              "surface-container-high": "#e9e8e4",
+              "primary-dim": "#385673",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary": "#eefdf0",
+              "on-surface-variant": "#5e5f5c",
+              "primary-fixed": "#b9d7fa",
+              "error-dim": "#67040d",
+              "on-primary-fixed": "#183854",
+              "error-container": "#fa746f",
+              "tertiary-container": "#e1efe2",
+              "outline-variant": "#b2b2ae",
+              "on-secondary-fixed-variant": "#6d555b",
+              "primary-container": "#b9d7fa",
+              "on-secondary": "#fff7f7",
+              "outline": "#7a7b77",
+              "on-background": "#313330",
+              "inverse-on-surface": "#9e9d9a",
+              "surface-container": "#efeeea",
+              "surface-container-highest": "#e3e3de",
+              "surface-container-low": "#f5f3f0",
+              "secondary-fixed-dim": "#ecccd3",
+              "tertiary-fixed": "#e1efe2",
+              "secondary-dim": "#644d53",
+              "inverse-primary": "#b9d7fa",
+              "on-primary-container": "#2d4b68",
+              "surface": "#fbf9f6",
+              "on-primary-fixed-variant": "#375572",
+              "background": "#fbf9f6",
+              "on-error": "#fff7f6",
+              "surface-bright": "#fbf9f6",
+              "on-secondary-fixed": "#4f3a3f",
+              "on-tertiary-fixed-variant": "#57645a",
+              "secondary": "#71595f",
+              "on-primary": "#f7f9ff",
+              "surface-tint": "#44627f",
+              "primary-fixed-dim": "#abc9ec",
+              "surface-variant": "#e3e3de",
+              "tertiary": "#556259"
+            },
+            fontFamily: {
+              "headline": ["Newsreader", "serif"],
+              "body": ["Manrope", "sans-serif"],
+              "label": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; }
+        .font-serif { font-family: 'Newsreader', serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .category-card:hover .card-overlay { opacity: 1; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fbf9f6]/80 dark:bg-slate-950/80 backdrop-blur-md">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-serif italic text-[#44627f] dark:text-[#b9d7fa]">escape corner</div>
+<!-- Desktop Links -->
+<div class="hidden md:flex space-x-8 items-center">
+<a class="font-sans tracking-widest uppercase text-xs text-[#44627f] dark:text-[#b9d7fa] border-b-2 border-[#44627f] pb-1 transition-colors duration-300" href="#">Categories</a>
+<a class="font-sans tracking-widest uppercase text-xs text-slate-500 dark:text-slate-400 font-medium hover:text-[#44627f] transition-colors duration-300" href="#">Cart</a>
+<a class="font-sans tracking-widest uppercase text-xs text-slate-500 dark:text-slate-400 font-medium hover:text-[#44627f] transition-colors duration-300" href="#">Contact</a>
+</div>
+<div class="flex items-center space-x-4">
+<button class="text-[#44627f] hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+<button class="text-[#44627f] hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="flex-grow pt-32 pb-24 px-8 max-w-7xl mx-auto w-full">
+<!-- Header Section -->
+<header class="mb-20 text-center max-w-3xl mx-auto">
+<span class="font-label tracking-[0.2em] uppercase text-xs text-primary mb-4 block">Curated Sanctuary</span>
+<h1 class="text-5xl md:text-7xl font-headline italic text-on-surface leading-tight">Find your next escape.</h1>
+<p class="mt-6 text-on-surface-variant font-body text-lg leading-relaxed">
+                Step into our digital aisles. Select a mood, a feeling, or a journey below to discover books curated specifically for your soul.
+            </p>
+</header>
+<!-- Category Grid (Bento Style) -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 auto-rows-[300px]">
+<!-- Friendship: Pastel Blue -->
+<div class="md:col-span-8 group relative overflow-hidden rounded-xl bg-primary-container/30 category-card cursor-pointer">
+<div class="absolute inset-0 bg-gradient-to-tr from-primary-container/80 to-transparent z-10"></div>
+<img alt="" class="absolute inset-0 w-full h-full object-cover grayscale-[20%] group-hover:scale-105 transition-transform duration-700" data-alt="Two friends laughing together in a cozy sunlit library with vintage books and warm wooden textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRQCEF2oplVb9EVt7jTcnQSYViBk8LC7KuobfvUEe1hVNcpUdzL9ylPRe4tWdKj3t_UZ1gj0WElkhWxgHOJj90YzWhxaLEJxjYvA9Eu7OvUvF1ZNJ0E1mYmKJGXIgktv3FcVjljCUmdtssiEs3qNaBnyW7J0zkOTbTelLrRTy0MO0FEQwn6mPFTvkeaJTLVpOu3ZCoNtnAB9PrbXE5SKQpF_3J2BPz4LrAQ6-HqPLTJ0bdshSpjziDz3fA1_uTfnVogTF47GD6kFI"/>
+<div class="absolute bottom-0 left-0 p-8 z-20">
+<div class="w-1 h-12 bg-primary mb-4"></div>
+<span class="font-label text-xs uppercase tracking-widest text-on-primary-container font-bold">Bonding</span>
+<h2 class="text-4xl font-headline text-on-primary-container mt-2">Friendship</h2>
+</div>
+</div>
+<!-- Love Stories: Pastel Pink -->
+<div class="md:col-span-4 group relative overflow-hidden rounded-xl bg-secondary-container/40 category-card cursor-pointer">
+<div class="absolute inset-0 bg-gradient-to-b from-transparent to-secondary-container/90 z-10"></div>
+<img alt="" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" data-alt="Close up of a delicate dried rose between the pages of an old book with soft romantic pink lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9smxDLJWssIed5aTkyu4s6ygYDgWi4YP7OV7d6VLsFCc6_66QicJc32wuGEMiIbP_rT1GCbE7-8_JVMBdzJSrmR9E_EHqDPHeX89UqMpEbLIQmH_xj7VniKEO4HyPBjQtbENqfBlGJx2BqO28xZJFzqxgk3uzEAGkiW__NhfYtEnkjvXqMlbd118LMwjOYvm8Dh1b_PnKK7nJtRx0ZBcHQrnXqN_c8O6DtTZBZMQSR4NbEzn6Efh9nQvTiMG6f_zsHPTwOhWUyrI"/>
+<div class="absolute inset-0 flex flex-col justify-end p-8 z-20">
+<span class="font-label text-xs uppercase tracking-widest text-on-secondary-container font-bold">Romance</span>
+<h2 class="text-3xl font-headline text-on-secondary-container mt-2">Love Stories</h2>
+</div>
+</div>
+<!-- Motivational: Pastel Yellow -->
+<div class="md:col-span-4 group relative overflow-hidden rounded-xl bg-[#fef9c3] category-card cursor-pointer">
+<div class="absolute inset-0 bg-gradient-to-br from-transparent to-[#fef08a]/80 z-10"></div>
+<img alt="" class="absolute inset-0 w-full h-full object-cover group-hover:rotate-1 transition-transform duration-500" data-alt="An open notebook on a clean minimalist desk with a cup of coffee and bright morning sunlight streaming in" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqqau6JZhMF5aF1RiodieQLHREn9PObOGO62z3-9a2uRIcxAGi7XILUXkAiOO6rV1frKRY0aQAx6r0q5v3KwK7WG-OeZhmUX8LE_MBM1TSb5UHYOq0s6HDqARCNl0MY-BAB1A_guJiT4cjZkxyKnfgDLfK0F2f4jC5DlFun_ONG0eW1azZud1_B4dbuXMzhjBwcnEJGF7KJ84PjNrcpPF-ds2LID1suwM6V3NE2uL7bPGsQPzSdjh6UcqbWjr3atebmDN5cmjy7-o"/>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center p-8 z-20">
+<span class="font-label text-xs uppercase tracking-widest text-on-tertiary-fixed-variant font-bold">Growth</span>
+<h2 class="text-3xl font-headline text-on-tertiary-fixed font-semibold mt-2">Motivational</h2>
+</div>
+</div>
+<!-- Escape / Adventure: Pastel Green -->
+<div class="md:col-span-8 group relative overflow-hidden rounded-xl bg-tertiary-container category-card cursor-pointer">
+<div class="absolute inset-0 bg-gradient-to-r from-tertiary-container via-transparent to-transparent z-10"></div>
+<img alt="" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" data-alt="Epic mountain landscape with mist and pine trees under a soft green overcast sky suggesting adventure" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApPeCTccf0Sk8nxwc2d8eI3-QhVSKFdnLS4f4FkAyTCIx9eHSen-cHjB_5DGqBLNULxmEbu2BzMjOR1XVvUWDPYweSXgJ6mQSPIBShQ4Uks8D4-x1hNVke8zH0CfWdZ8m8HSaZXnOnzqp9sgW0l55M0foaQKExPbXqiYhMn5SgG28l_U_UgsCBgE2IAHVOKZ_wr4wCqaWM3PXncAbfLWhAWEWH9uyG1FG6wn8vk7goSQCzXBRBTNhz0TpWCOn85PXM0txcI4gxVXA"/>
+<div class="absolute inset-y-0 left-0 w-1/2 flex flex-col justify-center p-12 z-20">
+<span class="font-label text-xs uppercase tracking-widest text-on-tertiary-container font-bold">The Great Unknown</span>
+<h2 class="text-4xl font-headline text-on-tertiary-container mt-2">Escape / Adventure</h2>
+<p class="mt-4 text-on-tertiary-container/80 font-body text-sm max-w-xs hidden md:block">Leave the mundane behind and traverse worlds unknown.</p>
+</div>
+</div>
+<!-- Horror: Pastel Purple -->
+<div class="md:col-span-12 group relative overflow-hidden rounded-xl bg-slate-200 category-card cursor-pointer h-[200px]">
+<div class="absolute inset-0 bg-gradient-to-t from-[#f3e8ff]/90 to-transparent z-10"></div>
+<img alt="" class="absolute inset-0 w-full h-full object-cover group-hover:translate-y-[-10px] transition-transform duration-1000" data-alt="Moody silhouette of an old Victorian house at twilight with soft purple fog and eerie shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCxrjwxZHyqYu1osn1AlafUESty-1-UbEzvSbzOkJatmcILZofvU7S3ZLx7E8RuQufL9o4iYtH_Pf8SLOW5-N3EDjxxT6bHyWb4f4UTbEodg8DDPsAVP6KF26ojacAJ34rogN2lYf6zPwD9lnx2fQ-NzC4of-YRUYeLG5W1_aNTdEYu37lV6FDwJfdkI6-WidOe2IrYsv4pICJDJdIJPHaHu5oYAlKFOQHPmx99mDzwJkSOMqilgFFyX3TKiPJZoRjCFLkiJicpB2Y"/>
+<div class="absolute inset-0 flex items-center justify-between px-12 z-20">
+<div>
+<span class="font-label text-xs uppercase tracking-widest text-slate-700 font-bold">The Shadows</span>
+<h2 class="text-4xl font-headline text-slate-900 mt-2">Horror</h2>
+</div>
+<div class="bg-slate-900/10 backdrop-blur p-4 rounded-full">
+<span class="material-symbols-outlined text-slate-900" data-icon="dark_mode">dark_mode</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Secondary Selection (Chips) -->
+<section class="mt-24">
+<h3 class="font-headline text-2xl mb-8">Or search by mood...</h3>
+<div class="flex flex-wrap gap-4">
+<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface font-label text-sm hover:bg-primary-container transition-colors duration-200">Melancholy</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface font-label text-sm hover:bg-secondary-container transition-colors duration-200">Whimsical</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface font-label text-sm hover:bg-tertiary-container transition-colors duration-200">Academic</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface font-label text-sm hover:bg-[#fef08a] transition-colors duration-200">Inspiring</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface font-label text-sm hover:bg-[#e9d5ff] transition-colors duration-200">Chilling</button>
+<button class="px-6 py-2 rounded-full bg-surface-container-high text-on-surface font-label text-sm hover:bg-primary-container transition-colors duration-200">Nostalgic</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-16 pb-8 bg-[#f5f3f0] dark:bg-slate-900">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="text-xl font-serif italic text-[#44627f] mb-4">escape corner</div>
+<p class="font-sans text-sm Manrope text-slate-600 dark:text-slate-400 leading-relaxed">
+                    A Curated Sanctuary for Readers. Bringing the tactile joy of independent bookstores to your digital home.
+                </p>
+</div>
+<div>
+<h4 class="font-serif Newsreader text-lg text-[#44627f] dark:text-[#b9d7fa] mb-4">Explore</h4>
+<ul class="space-y-2">
+<li><a class="font-sans text-sm Manrope text-slate-600 dark:text-slate-400 hover:translate-x-1 transition-transform duration-200 block" href="#">All Collections</a></li>
+<li><a class="font-sans text-sm Manrope text-slate-600 dark:text-slate-400 hover:translate-x-1 transition-transform duration-200 block" href="#">Rare Editions</a></li>
+<li><a class="font-sans text-sm Manrope text-slate-600 dark:text-slate-400 hover:translate-x-1 transition-transform duration-200 block" href="#">Gift Cards</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-serif Newsreader text-lg text-[#44627f] dark:text-[#b9d7fa] mb-4">Information</h4>
+<ul class="space-y-2">
+<li><a class="font-sans text-sm Manrope text-slate-600 dark:text-slate-400 hover:translate-x-1 transition-transform duration-200 block" href="#">Privacy Policy</a></li>
+<li><a class="font-sans text-sm Manrope text-slate-600 dark:text-slate-400 hover:translate-x-1 transition-transform duration-200 block" href="#">Terms of Service</a></li>
+<li><a class="font-sans text-sm Manrope text-slate-600 dark:text-slate-400 hover:translate-x-1 transition-transform duration-200 block" href="#">Shipping &amp; Returns</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-serif Newsreader text-lg text-[#44627f] dark:text-[#b9d7fa] mb-4">Newsletter</h4>
+<p class="font-sans text-sm Manrope text-slate-600 dark:text-slate-400 mb-4">Join our community of book lovers.</p>
+<div class="flex gap-2">
+<input class="bg-surface-container-low border-none focus:ring-1 focus:ring-[#44627f]/30 rounded-md w-full text-sm" placeholder="email address" type="email"/>
+<button class="bg-[#44627f] text-white px-4 py-2 rounded-md hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-outline-variant/10 text-center">
+<p class="font-sans text-sm Manrope text-slate-500 dark:text-slate-500">© 2024 escape corner. A Curated Sanctuary for Readers.</p>
+</div>
+</footer>
+<script src="site.js"></script>
+</body></html>

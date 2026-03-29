@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;1,400;1,600&amp;family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-fixed": "#3b473f",
+              "on-secondary-container": "#634c51",
+              "on-error-container": "#6e0a12",
+              "inverse-surface": "#0e0e0d",
+              "primary": "#44627f",
+              "surface-dim": "#dadad6",
+              "tertiary-fixed-dim": "#d2e0d4",
+              "error": "#a83836",
+              "secondary-fixed": "#fbdae1",
+              "secondary-container": "#fbdae1",
+              "on-tertiary-container": "#4d5a51",
+              "on-surface": "#313330",
+              "tertiary-dim": "#49564d",
+              "surface-container-high": "#e9e8e4",
+              "primary-dim": "#385673",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary": "#eefdf0",
+              "on-surface-variant": "#5e5f5c",
+              "primary-fixed": "#b9d7fa",
+              "error-dim": "#67040d",
+              "on-primary-fixed": "#183854",
+              "error-container": "#fa746f",
+              "tertiary-container": "#e1efe2",
+              "outline-variant": "#b2b2ae",
+              "on-secondary-fixed-variant": "#6d555b",
+              "primary-container": "#b9d7fa",
+              "on-secondary": "#fff7f7",
+              "outline": "#7a7b77",
+              "on-background": "#313330",
+              "inverse-on-surface": "#9e9d9a",
+              "surface-container": "#efeeea",
+              "surface-container-highest": "#e3e3de",
+              "surface-container-low": "#f5f3f0",
+              "secondary-fixed-dim": "#ecccd3",
+              "tertiary-fixed": "#e1efe2",
+              "secondary-dim": "#644d53",
+              "inverse-primary": "#b9d7fa",
+              "on-primary-container": "#2d4b68",
+              "surface": "#fbf9f6",
+              "on-primary-fixed-variant": "#375572",
+              "background": "#fbf9f6",
+              "on-error": "#fff7f6",
+              "surface-bright": "#fbf9f6",
+              "on-secondary-fixed": "#4f3a3f",
+              "on-tertiary-fixed-variant": "#57645a",
+              "secondary": "#71595f",
+              "on-primary": "#f7f9ff",
+              "surface-tint": "#44627f",
+              "primary-fixed-dim": "#abc9ec",
+              "surface-variant": "#e3e3de",
+              "tertiary": "#556259"
+            },
+            fontFamily: {
+              "headline": ["Newsreader"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-shadow {
+            box-shadow: 0 10px 40px rgba(49, 51, 48, 0.06);
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #fbf9f6;
+            color: #313330;
+        }
+    </style>
+</head>
+<body class="selection:bg-primary-container">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fbf9f6]/80 backdrop-blur-md no-border">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-serif italic text-[#44627f] dark:text-[#b9d7fa]">escape corner</div>
+<div class="hidden md:flex space-x-12 items-center">
+<a class="font-sans tracking-widest uppercase text-xs text-[#44627f] border-b-2 border-[#44627f] pb-1 transition-colors duration-300" href="#">Categories</a>
+<a class="font-sans tracking-widest uppercase text-xs text-slate-500 hover:text-[#44627f] transition-colors duration-300" href="#">Cart</a>
+<a class="font-sans tracking-widest uppercase text-xs text-slate-500 hover:text-[#44627f] transition-colors duration-300" href="#">Contact</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="text-[#44627f] hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+<button class="text-[#44627f] hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</button>
+</div>
+</div>
+</nav>
+<!-- Main Content Canvas -->
+<main class="pt-32 pb-24 px-8 max-w-7xl mx-auto min-h-screen">
+<!-- Breadcrumb / Task Back -->
+<div class="mb-12 flex items-center space-x-2 text-on-surface-variant">
+<a class="text-xs font-label tracking-widest uppercase hover:text-primary transition-colors" href="#">Friendship</a>
+<span class="material-symbols-outlined text-sm" data-icon="chevron_right">chevron_right</span>
+<span class="text-xs font-label tracking-widest uppercase text-primary font-bold">The Quiet Bond</span>
+</div>
+<!-- Book Detail Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<!-- Left Column: Visual/Cover (Asymmetric bleed effect) -->
+<div class="lg:col-span-5 relative group">
+<!-- Pastel Wash Accent (Friendship Blue) -->
+<div class="absolute -inset-4 bg-primary-container/20 -z-10 rounded-xl transform -rotate-1"></div>
+<div class="bg-surface-container-lowest editorial-shadow overflow-hidden rounded-lg aspect-[3/4] transition-transform duration-500 hover:scale-[1.02]">
+<img alt="Book Cover" class="w-full h-full object-cover" data-alt="Elegant minimalist book cover titled The Quiet Bond featuring two abstract intertwined lines in soft blue on a cream paper texture background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2UjGwy9SsXaHWlwohAH05zA_eiYTUlvpONho1v8UFLBUFejQa9yGRVfDqdeRXGPLIUNt_wiVmpEzsQXKr739nKKDVuWJaLiGynfiOeypQ-sYchf2Tmal-0oA4Fi_Yey4HXonR06kG8I80DvWKc7uDeEIbTRtTYa4pxt5VwEnea68wZJNRkGXjMz2Ja_8wJMEkZC6ZmwFGR2RatzGi25h07L3O2x8vay4zhCCXsLut1aUBe0gTSTCMclcejr5qgMvhAaAu95mK6_g"/>
+</div>
+<!-- Genre Coding Bar -->
+<div class="absolute left-0 top-12 w-1 h-32 bg-primary-container"></div>
+</div>
+<!-- Right Column: Content/Editorial -->
+<div class="lg:col-span-7 space-y-10">
+<header class="space-y-4">
+<div class="flex items-center space-x-3">
+<span class="px-3 py-1 bg-primary-container text-on-primary-container text-[10px] font-label tracking-widest uppercase rounded-full">Editor's Choice</span>
+<span class="text-on-surface-variant text-xs font-label tracking-widest uppercase">Genre: Friendship</span>
+</div>
+<h1 class="text-5xl md:text-7xl font-headline italic text-on-surface leading-tight -tracking-[0.02rem]">The Quiet Bond</h1>
+<p class="text-xl font-headline text-on-surface-variant italic">by Eleanor Vance</p>
+</header>
+<div class="space-y-6">
+<div class="flex items-baseline space-x-4">
+<span class="text-3xl font-body font-bold text-primary">$24.00</span>
+<span class="text-sm text-on-surface-variant line-through opacity-50">$32.00</span>
+</div>
+<div class="max-w-2xl">
+<p class="text-lg font-body leading-relaxed text-on-surface/90 first-letter:text-5xl first-letter:font-headline first-letter:float-left first-letter:mr-3 first-letter:italic">
+                            A poignant exploration of the unseen threads that tie us together. Eleanor Vance weaves a delicate narrative of two strangers meeting in a rainy seaside town, discovering that sometimes the most profound conversations happen in the silences between words. A masterclass in atmospheric storytelling.
+                        </p>
+</div>
+<!-- Availability & Details Bento-style cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+<div class="p-4 bg-surface-container-low rounded-lg flex items-center space-x-4">
+<span class="material-symbols-outlined text-primary" data-icon="inventory_2">inventory_2</span>
+<div>
+<p class="text-xs font-label tracking-widest uppercase text-on-surface-variant">Availability</p>
+<p class="text-sm font-body font-bold">In stock</p>
+</div>
+</div>
+<div class="p-4 bg-surface-container-low rounded-lg flex items-center space-x-4">
+<span class="material-symbols-outlined text-primary" data-icon="local_shipping">local_shipping</span>
+<div>
+<p class="text-xs font-label tracking-widest uppercase text-on-surface-variant">Delivery</p>
+<p class="text-sm font-body font-bold">2-3 business days</p>
+</div>
+</div>
+</div>
+</div>
+<!-- CTA Actions -->
+<div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 pt-8">
+<button class="flex-1 bg-gradient-to-r from-primary to-primary-dim text-on-primary py-4 rounded-md font-label tracking-widest uppercase text-sm hover:opacity-90 transition-all transform hover:-translate-y-1 active:scale-95 editorial-shadow">
+                        Buy Now
+                    </button>
+<button class="px-8 py-4 bg-surface-container-highest text-on-surface rounded-md font-label tracking-widest uppercase text-sm hover:bg-surface-container-high transition-colors">
+                        Add to Wishlist
+                    </button>
+</div>
+<!-- Features/Info -->
+<div class="pt-12 grid grid-cols-3 gap-8 border-t border-outline-variant/15">
+<div class="text-center">
+<p class="text-xs font-label tracking-widest uppercase text-on-surface-variant mb-1">Hardcover</p>
+<p class="text-sm font-body font-bold">342 Pages</p>
+</div>
+<div class="text-center">
+<p class="text-xs font-label tracking-widest uppercase text-on-surface-variant mb-1">Language</p>
+<p class="text-sm font-body font-bold">English</p>
+</div>
+<div class="text-center">
+<p class="text-xs font-label tracking-widest uppercase text-on-surface-variant mb-1">ISBN</p>
+<p class="text-sm font-body font-bold">978-3-16</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Recommended / Context Section -->
+<section class="mt-32">
+<div class="flex justify-between items-end mb-12">
+<div class="space-y-2">
+<p class="text-xs font-label tracking-widest uppercase text-primary font-bold">Similar Journeys</p>
+<h2 class="text-4xl font-headline italic">More from the Friendship Collection</h2>
+</div>
+<a class="text-xs font-label tracking-widest uppercase border-b border-primary text-primary pb-1 hover:opacity-70 transition-opacity" href="#">View All</a>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<!-- Mini Card 1 -->
+<div class="space-y-4 group">
+<div class="aspect-[3/4] bg-surface-container-low rounded-md overflow-hidden transition-transform duration-300 group-hover:-translate-y-2">
+<img alt="Book" class="w-full h-full object-cover" data-alt="Stylized book cover with minimalist watercolor patterns in muted green and beige tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDekmSo-chxhKMAvnL0w7Ra3lbuLl2aEJ88sbyZbvLpOKwOqu4W78ZxCxe9eboV88r1NKvdtsgh3T1SgEWhVeP5U-Y6ZurJJNmViYjqEivtrzolw-0vKVxQw34s-s_PRiFvqG9WpSptuj4rY9CT8fO6bsgSof3k5orQNE9vJKmkdfm97JGldMt9mOx5lrTjCXE8nRweXTwRDaNidkp03_upKSzREx7qQ_bxQrJrJWO8h2Yp4auT8wr41JYR0uc0lGVOdXnlTqUy2M4"/>
+</div>
+<div>
+<h4 class="font-headline italic text-lg">Beyond the Shore</h4>
+<p class="text-xs font-label tracking-widest uppercase text-on-surface-variant">Marcus Thorne</p>
+</div>
+</div>
+<!-- Mini Card 2 -->
+<div class="space-y-4 group">
+<div class="aspect-[3/4] bg-surface-container-low rounded-md overflow-hidden transition-transform duration-300 group-hover:-translate-y-2">
+<img alt="Book" class="w-full h-full object-cover" data-alt="Elegant book cover with a single embossed golden leaf on a charcoal grey background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzIkq5y4iYK7oumVSXA0nJJzkjbc1dty7cDNAu-t0IEIjOKKuP5CmzoD_sYkWA9zFpD7_SGjnnwikQFi2w0q_Ydw4IGlrkzfsHYh93UwgK8twW_3mINhPINSlx0-I-9mUoEmdlKV64x9FG1Vl0n660_7R73GpsjYTLjNqA5CtxaJOAx7riZTjdkNCnlsMVsGvuX3xHGNQnio7B5_kCViIGcK7uM9IZjFjn8yZK69MTHhHvogwxxObPNysFe0JJwLVZklzW0tMkxxY"/>
+</div>
+<div>
+<h4 class="font-headline italic text-lg">Golden Echoes</h4>
+<p class="text-xs font-label tracking-widest uppercase text-on-surface-variant">S. J. Aris</p>
+</div>
+</div>
+<!-- Mini Card 3 -->
+<div class="space-y-4 group">
+<div class="aspect-[3/4] bg-surface-container-low rounded-md overflow-hidden transition-transform duration-300 group-hover:-translate-y-2">
+<img alt="Book" class="w-full h-full object-cover" data-alt="Abstract book cover featuring blurred silhouettes of two people walking together in a misty forest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1HPXXNIYsUb6kQmVudN2flP5Bjt8RXhRmQGW0LcGBhcrqElrsSsuJ5dIqHJqTrO2fukg_C4Vpo5v-vYDZTkj4xcgsCDLt4Ue9KuxV4SrEn6cYfXTl5bRuK4hflIHff-ZQQ76Gelv6RsGrWPXr0wNknCnx0TYuf7NgCyAZoZUDAG2Ezuu3O1YxuE0V-s_siVxFbdMEprNV93VnVzqdTZppzqTnvBvYebcrsFG8cH0mhAhdImMQs9G1hUR0QfC8tI2Q7undse2DQ9Q"/>
+</div>
+<div>
+<h4 class="font-headline italic text-lg">Parallel Paths</h4>
+<p class="text-xs font-label tracking-widest uppercase text-on-surface-variant">Lina Rossi</p>
+</div>
+</div>
+<!-- Mini Card 4 -->
+<div class="space-y-4 group">
+<div class="aspect-[3/4] bg-surface-container-low rounded-md overflow-hidden transition-transform duration-300 group-hover:-translate-y-2">
+<img alt="Book" class="w-full h-full object-cover" data-alt="Contemporary book cover with bold serif typography layered over a pale yellow architectural photograph" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA0UCGlsPKL7Cf4mYK7ptbwY_GWc_g0N_KMwloaWqzGKrp5ccIm9l8MRxLEN3pmTbvEYJ8m2z61M7lv4sZzJli5xs_Fq2GEr98mGKO0nZi4kwDb7fWU7CiDBtJ_b7l8kqqbY0ayl8t2pQ7XCJpFCPJXO-PtI72GWDDMP16XkZtgQ_j4OiGL7cjce_OQzL_hQih2Ccvtm42WKml0J5dnWmGGaUjXUYrOtSHIpV_zgA92PxOocWZH9uH9dTClWBD4nF6R2VSL0T9ysUU"/>
+</div>
+<div>
+<h4 class="font-headline italic text-lg">The Open Door</h4>
+<p class="text-xs font-label tracking-widest uppercase text-on-surface-variant">Thomas Key</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f5f3f0] dark:bg-slate-900 w-full pt-16 pb-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 max-w-7xl mx-auto">
+<div class="space-y-6">
+<div class="text-xl font-serif italic text-[#44627f]">escape corner</div>
+<p class="text-sm font-sans text-slate-600 dark:text-slate-400 leading-relaxed">
+                    A curated sanctuary for readers. Discover stories that linger long after the final page is turned.
+                </p>
+</div>
+<div>
+<h4 class="font-serif text-lg mb-6">Collections</h4>
+<ul class="space-y-4">
+<li><a class="text-sm font-sans text-slate-600 dark:text-slate-400 hover:translate-x-1 transition-transform duration-200 inline-block" href="#">Friendship</a></li>
+<li><a class="text-sm font-sans text-slate-600 dark:text-slate-400 hover:translate-x-1 transition-transform duration-200 inline-block" href="#">Love Stories</a></li>
+<li><a class="text-sm font-sans text-slate-600 dark:text-slate-400 hover:translate-x-1 transition-transform duration-200 inline-block" href="#">Adventure</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-serif text-lg mb-6">Information</h4>
+<ul class="space-y-4">
+<li><a class="text-sm font-sans text-slate-600 dark:text-slate-400 hover:translate-x-1 transition-transform duration-200 inline-block" href="#">Privacy Policy</a></li>
+<li><a class="text-sm font-sans text-slate-600 dark:text-slate-400 hover:translate-x-1 transition-transform duration-200 inline-block" href="#">Terms of Service</a></li>
+<li><a class="text-sm font-sans text-slate-600 dark:text-slate-400 hover:translate-x-1 transition-transform duration-200 inline-block" href="#">Shipping &amp; Returns</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-serif text-lg mb-6">Newsletter</h4>
+<p class="text-sm font-sans text-slate-600 dark:text-slate-400 mb-4">Join our community for literary inspiration.</p>
+<div class="flex">
+<input class="bg-surface-container border-none focus:ring-1 focus:ring-[#44627f]/30 text-sm w-full py-2 px-4 rounded-l-md" placeholder="Your email" type="email"/>
+<button class="bg-primary text-on-primary px-4 py-2 rounded-r-md text-sm font-label uppercase tracking-widest transition-opacity hover:opacity-90">Join</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 pt-16 text-center">
+<p class="text-sm font-sans text-slate-500">© 2024 escape corner. A Curated Sanctuary for Readers.</p>
+</div>
+</footer>
+<script src="site.js"></script>
+</body></html>

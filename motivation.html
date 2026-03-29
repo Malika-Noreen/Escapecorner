@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-dim": "#dadad6",
+              "on-tertiary": "#eefdf0",
+              "inverse-surface": "#0e0e0d",
+              "outline": "#7a7b77",
+              "on-primary-fixed": "#183854",
+              "tertiary-fixed-dim": "#d2e0d4",
+              "on-secondary": "#fff7f7",
+              "surface": "#fbf9f6",
+              "on-secondary-fixed-variant": "#6d555b",
+              "on-error": "#fff7f6",
+              "surface-container-highest": "#e3e3de",
+              "tertiary-container": "#e1efe2",
+              "primary-fixed-dim": "#abc9ec",
+              "on-surface": "#313330",
+              "outline-variant": "#b2b2ae",
+              "surface-bright": "#fbf9f6",
+              "secondary-dim": "#644d53",
+              "tertiary-fixed": "#e1efe2",
+              "error-container": "#fa746f",
+              "error": "#a83836",
+              "error-dim": "#67040d",
+              "on-tertiary-fixed": "#3b473f",
+              "on-tertiary-container": "#4d5a51",
+              "secondary-fixed": "#fbdae1",
+              "on-secondary-container": "#634c51",
+              "secondary": "#71595f",
+              "surface-container-low": "#f5f3f0",
+              "surface-container": "#efeeea",
+              "inverse-on-surface": "#9e9d9a",
+              "on-primary-container": "#2d4b68",
+              "surface-tint": "#44627f",
+              "surface-variant": "#e3e3de",
+              "secondary-container": "#fbdae1",
+              "tertiary-dim": "#49564d",
+              "secondary-fixed-dim": "#ecccd3",
+              "on-surface-variant": "#5e5f5c",
+              "on-primary-fixed-variant": "#375572",
+              "on-tertiary-fixed-variant": "#57645a",
+              "primary": "#44627f",
+              "primary-dim": "#385673",
+              "primary-fixed": "#b9d7fa",
+              "background": "#fbf9f6",
+              "primary-container": "#b9d7fa",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-high": "#e9e8e4",
+              "tertiary": "#556259",
+              "on-primary": "#f7f9ff",
+              "inverse-primary": "#b9d7fa",
+              "on-background": "#313330",
+              "on-error-container": "#6e0a12",
+              "on-secondary-fixed": "#4f3a3f"
+            },
+            fontFamily: {
+              "headline": ["Newsreader"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #fbf9f6;
+            color: #313330;
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fbf9f6]/80 dark:bg-slate-950/80 backdrop-blur-md">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-serif italic text-[#44627f] dark:text-[#b9d7fa]">escape corner</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-[#44627f] dark:text-[#b9d7fa] border-b-2 border-[#44627f] pb-1 font-sans tracking-widest uppercase text-xs Manrope" href="#">Categories</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium font-sans tracking-widest uppercase text-xs Manrope hover:text-[#44627f] transition-colors duration-300" href="#">Cart</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium font-sans tracking-widest uppercase text-xs Manrope hover:text-[#44627f] transition-colors duration-300" href="#">Contact</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="text-[#44627f] hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+</button>
+<button class="text-[#44627f] hover:opacity-70 transition-opacity">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-24 min-h-screen">
+<!-- Hero Header with Pastel Yellow Theme -->
+<section class="relative px-8 py-16 md:py-24 bg-[#FFF9E0] overflow-hidden">
+<div class="max-w-7xl mx-auto relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div>
+<span class="font-label text-xs tracking-[0.2em] uppercase text-on-tertiary-fixed-variant mb-4 block">Collection 04</span>
+<h1 class="font-headline text-5xl md:text-7xl italic text-on-surface leading-tight mb-6">
+                        The Spark of <br/>Intentionality
+                    </h1>
+<p class="font-body text-lg text-on-surface-variant max-w-md leading-relaxed mb-8">
+                        A curated sanctuary of motivational literature designed to provide clarity, purpose, and the gentle push towards your highest self.
+                    </p>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-1.5 rounded-full bg-surface-container-highest text-on-surface text-sm font-label">Mindfulness</span>
+<span class="px-4 py-1.5 rounded-full bg-[#FFF2AD] text-on-surface text-sm font-label">Productivity</span>
+<span class="px-4 py-1.5 rounded-full bg-surface-container-highest text-on-surface text-sm font-label">Stoicism</span>
+</div>
+</div>
+<div class="relative hidden md:block">
+<div class="w-full aspect-[4/5] bg-surface-container-lowest shadow-2xl overflow-hidden rounded-sm rotate-3 transform">
+<img alt="Featured Motivational Book" class="w-full h-full object-cover grayscale-[20%]" data-alt="Close-up of a premium book cover with elegant minimalist typography and gold foil accents resting on a beige linen surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZKP1d_347vPbMqcCm_fgB0nQakvI67OsuwJVa-HrVfh7KPZmozStMWFdicPz9Vtg4dJ5dVpmtdbqpWPPnzn9qqz3XKSLz3zll90AAGgUuXlXQf_mq1LXGiO3YP4wiSNYmw3Ut8IfUHFO61ikmBoaX0RIA76m6ksFA_0IVYsK3666_JXMQBUaLmSix14Ghe81QoESfTb2ScVFqDxNcxlV3ktXjfGxt5T6QfobCvOOYOPBEI84NH6g0uoGukvB3IF-PaWf16w3zzIw"/>
+</div>
+<div class="absolute -bottom-8 -left-8 w-48 h-64 bg-[#FFF2AD] shadow-xl overflow-hidden rounded-sm -rotate-6 transform hidden lg:block">
+<img alt="Detail View" class="w-full h-full object-cover" data-alt="Macro shot of open book pages showing crisp paper texture and clean sans-serif font in warm morning sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCjIB2B9MXnNuIqrIW_EvAj81gsySxSEa8T3C6gLFWsi8BtlfPThuMRGBbvz74U4WBo2C4QXZeu32vWrN0Q97kMnBBLjZ8zsLfcpum1KriKW6_6HMGjgSmX2Y6Y_IycHK_IfxwhGD237VeQk6iBNYsOl7VbKP8biqs85XTtYXYyDkY5CDQrzPjpBbRMW2ny3Y4fh5uwqQ0FfUkZOResPOvi583GvjQfPk9eIXse9C4YJ2HFblTz1WVrYxpMy44rhx1AwlhHqlIlm8"/>
+</div>
+</div>
+</div>
+<!-- Aesthetic Background Accents -->
+<div class="absolute top-0 right-0 w-1/2 h-full bg-white/20 blur-3xl rounded-full translate-x-1/2 -translate-y-1/2"></div>
+</section>
+<!-- Book Collection Grid -->
+<section class="max-w-7xl mx-auto px-8 py-20 bg-surface">
+<div class="flex justify-between items-baseline mb-16">
+<div>
+<h2 class="font-headline text-3xl text-on-surface italic">Our Selected Volumes</h2>
+<p class="font-body text-sm text-on-surface-variant mt-2">12 titles currently in the sanctuary</p>
+</div>
+<div class="flex items-center gap-4">
+<button class="font-label text-xs uppercase tracking-widest text-on-surface-variant flex items-center gap-2 hover:text-primary transition-colors">
+                        Filter <span class="material-symbols-outlined text-sm" data-icon="tune">tune</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-10 gap-y-20">
+<!-- Book Card 1 -->
+<div class="group">
+<div class="relative aspect-[3/4] bg-surface-container-low mb-6 overflow-hidden transition-transform duration-500 group-hover:-translate-y-2">
+<div class="absolute left-0 top-0 w-1 h-full bg-[#FFF2AD]"></div>
+<img alt="The Art of Stillness" class="w-full h-full object-cover" data-alt="An elegant book with a mustard yellow spine and white cover art featuring a simple line drawing of a sun over a calm sea" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC09xIhz--czx3nbkXvwpGGlcKoGp29GAkzf289JL_6h6cHhu4qUqTLZRZk9qjl7aC6CDeAAcZbupH6BLVBa4jTSvRaWmb5Ac-HcVr4miOwr5A9efeSDl5rXVjgBh_HYd369SYFmYuiH7YVuiAayASFsreYEaDHc3FrsBWq4eLpDCD-5GUGNULkiIjoX6UqSvG0tyzYHXG2pvWYLA-DvhKQF-KTQEDYj5ecq0czRb0smqkzIxrkL_uqrI_X0xojjS605-vKNcFvKoo"/>
+<div class="absolute inset-0 bg-on-surface/0 group-hover:bg-on-surface/5 transition-colors duration-300"></div>
+<button class="absolute bottom-4 right-4 bg-primary text-on-primary px-4 py-2 rounded-sm font-label text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">
+                            Add to Cart
+                        </button>
+</div>
+<p class="font-label text-[10px] uppercase tracking-[0.2em] text-on-surface-variant mb-2">James Clear</p>
+<h3 class="font-headline text-xl text-on-surface mb-2">Atomic Shifts</h3>
+<p class="font-body text-sm text-primary font-bold">$24.00</p>
+</div>
+<!-- Book Card 2 -->
+<div class="group">
+<div class="relative aspect-[3/4] bg-surface-container-low mb-6 overflow-hidden transition-transform duration-500 group-hover:-translate-y-2">
+<div class="absolute left-0 top-0 w-1 h-full bg-[#FFF2AD]"></div>
+<img alt="Deep Work" class="w-full h-full object-cover" data-alt="Modern book cover design with bold typography 'ELEVATE' against a soft pastel cream background with textured grain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqv0-Ighwd3JGyLJhqW2b6rhoz1pqdE5dABHP0rJPh4N3JMcvvPp_6xwm0SSaLbjsqHODL_jY16zmoD2RjipxSJXVnPNqsOefZQTlCY00nT5RBVPjoW2dX8p0ayiqxfpBhZMyU4ci1V4M5blOuHSFlPS6Ja8wQUWfE604JrGkxvrXWd1kAvmSe4gtYRDtppFOYBrQpqnHsI9SidG1s8QuXNecmFZzO0J4epXiAHgYK3B26wZM2s1m-QDFP9ZGAT_448mgwaztSR7U"/>
+<div class="absolute inset-0 bg-on-surface/0 group-hover:bg-on-surface/5 transition-colors duration-300"></div>
+<button class="absolute bottom-4 right-4 bg-primary text-on-primary px-4 py-2 rounded-sm font-label text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">
+                            Add to Cart
+                        </button>
+</div>
+<p class="font-label text-[10px] uppercase tracking-[0.2em] text-on-surface-variant mb-2">Cal Newport</p>
+<h3 class="font-headline text-xl text-on-surface mb-2">The Focused Mind</h3>
+<p class="font-body text-sm text-primary font-bold">$28.50</p>
+</div>
+<!-- Book Card 3 -->
+<div class="group">
+<div class="relative aspect-[3/4] bg-surface-container-low mb-6 overflow-hidden transition-transform duration-500 group-hover:-translate-y-2">
+<div class="absolute left-0 top-0 w-1 h-full bg-[#FFF2AD]"></div>
+<img alt="The Mountain is You" class="w-full h-full object-cover" data-alt="A clean book cover featuring a minimalist mountain peak illustration and serif typography on heavy matte paper stock" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLH6uOb04YIhIP2qhThbFhqqnSPlb9AVhFBRsiLflLZSRv6n9fl3KiF_JQ16YCztnhrlAx81wFK7JzHEVuChwSBjNeKyxDh4Zs6zQZ7C3k8WkRbNNGveb7ADFuDtpMj_5IQfd4HcbQtVliHMw5jwlaj5GGj1Pm3h8qEwbLa_84xLKvQjJ8Ds8bPelkq-I_NjbVom-DTAqoCbEx7H1FDQZgX0N4hLqjwCaQ1dDy9td7Z6x3cidR0F3w9mEfTpAXyng6CadBIn7buTM"/>
+<div class="absolute inset-0 bg-on-surface/0 group-hover:bg-on-surface/5 transition-colors duration-300"></div>
+<button class="absolute bottom-4 right-4 bg-primary text-on-primary px-4 py-2 rounded-sm font-label text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">
+                            Add to Cart
+                        </button>
+</div>
+<p class="font-label text-[10px] uppercase tracking-[0.2em] text-on-surface-variant mb-2">Brianna Wiest</p>
+<h3 class="font-headline text-xl text-on-surface mb-2">The Inner Ascent</h3>
+<p class="font-body text-sm text-primary font-bold">$22.00</p>
+</div>
+<!-- Book Card 4 -->
+<div class="group">
+<div class="relative aspect-[3/4] bg-surface-container-low mb-6 overflow-hidden transition-transform duration-500 group-hover:-translate-y-2">
+<div class="absolute left-0 top-0 w-1 h-full bg-[#FFF2AD]"></div>
+<img alt="Flow" class="w-full h-full object-cover" data-alt="Artistic book cover with organic fluid shapes in warm yellow and ochre tones, titled 'Flow State' in a modern font" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBvmTt8FkjZf9_HFPSTb6Pm6a6lT7CXyg1kAHI12O3G8b7m_7ezUm5a-jZsu-1RymFSTU4ukM2d-Xt70_qt5QtsSM_xuacu7Jfnf-CehC3hD09w6PY8eoZXhtS8PZb6jxSEGBkVnkzsPpNPPfXGj28L9A6FMDC0B4yyDmQ2U3oZ7fNgAmW309CFp4UpKZOyCH_6bUA34s-_xJjlC3YTRPBR379nTTtFBFo0ng1XhgWFnI7d045wqrW9HhE2ix9G5hmzDMZZmA-AE0"/>
+<div class="absolute inset-0 bg-on-surface/0 group-hover:bg-on-surface/5 transition-colors duration-300"></div>
+<button class="absolute bottom-4 right-4 bg-primary text-on-primary px-4 py-2 rounded-sm font-label text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">
+                            Add to Cart
+                        </button>
+</div>
+<p class="font-label text-[10px] uppercase tracking-[0.2em] text-on-surface-variant mb-2">Oliver Burkeman</p>
+<h3 class="font-headline text-xl text-on-surface mb-2">Four Thousand Weeks</h3>
+<p class="font-body text-sm text-primary font-bold">$26.00</p>
+</div>
+<!-- Book Card 5 -->
+<div class="group">
+<div class="relative aspect-[3/4] bg-surface-container-low mb-6 overflow-hidden transition-transform duration-500 group-hover:-translate-y-2">
+<div class="absolute left-0 top-0 w-1 h-full bg-[#FFF2AD]"></div>
+<img alt="Meditations" class="w-full h-full object-cover" data-alt="A vintage style book cover with intricate gold leaf patterns on a muted pale yellow canvas fabric texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDO-1wlvtUf-eFUDmTcR7RivTw2Xf_PZlppedLJQoptE9mqChp36FaAGy9pxPSsTnzi0pDMPYGdBBaVlkJ0g9FCkXI4Zg-UflUHRFGPFUk-vM7YJdgiEAJ0XQwVwaBeagTos4kORVyymfh64Qdt6WctV6Il-YNTjH3wwGFzCG3pKn3a_6RE5DzwF0-cBTGmiyYm82_MVNMkDN4_bCL3u2pLet97VIy3wv8aoi8NNwkcEsJq41uxRgbm6a730p4wsif33nNa3f3S1b8"/>
+<div class="absolute inset-0 bg-on-surface/0 group-hover:bg-on-surface/5 transition-colors duration-300"></div>
+<button class="absolute bottom-4 right-4 bg-primary text-on-primary px-4 py-2 rounded-sm font-label text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">
+                            Add to Cart
+                        </button>
+</div>
+<p class="font-label text-[10px] uppercase tracking-[0.2em] text-on-surface-variant mb-2">Marcus Aurelius</p>
+<h3 class="font-headline text-xl text-on-surface mb-2">Stoic Reflections</h3>
+<p class="font-body text-sm text-primary font-bold">$19.99</p>
+</div>
+<!-- Book Card 6 -->
+<div class="group">
+<div class="relative aspect-[3/4] bg-surface-container-low mb-6 overflow-hidden transition-transform duration-500 group-hover:-translate-y-2">
+<div class="absolute left-0 top-0 w-1 h-full bg-[#FFF2AD]"></div>
+<img alt="Essentialism" class="w-full h-full object-cover" data-alt="Simple book cover featuring a large single white feather against a soft buttery yellow background with elegant serif text" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbkQMFiWmnY8DJvxUToMPr11FEL5RSg3TtkSTT44Vbz4t2qdWX6p067z8hmO1SacJnt7gj6_LY5gHtF0hxHY3V9BYZEFgwpdXsnKAf7vs7LI7P1d7T2JLkis5sI-8iFjBGrt7LiEXLtaCvZo9rxwDCRI79v3_CC6JKSKgvwrXs6QXQgNGhWfafvUBegC5nZVQoXDZkWFHbUMvSORaWpPNpj3fiiCjOnn1M47yyBfMukYbEfFiSgrp9Z_hjXjPI6Kjav3Ypw7b0RKU"/>
+<div class="absolute inset-0 bg-on-surface/0 group-hover:bg-on-surface/5 transition-colors duration-300"></div>
+<button class="absolute bottom-4 right-4 bg-primary text-on-primary px-4 py-2 rounded-sm font-label text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">
+                            Add to Cart
+                        </button>
+</div>
+<p class="font-label text-[10px] uppercase tracking-[0.2em] text-on-surface-variant mb-2">Greg McKeown</p>
+<h3 class="font-headline text-xl text-on-surface mb-2">The Disciplined Pursuit</h3>
+<p class="font-body text-sm text-primary font-bold">$25.50</p>
+</div>
+<!-- Book Card 7 -->
+<div class="group">
+<div class="relative aspect-[3/4] bg-surface-container-low mb-6 overflow-hidden transition-transform duration-500 group-hover:-translate-y-2">
+<div class="absolute left-0 top-0 w-1 h-full bg-[#FFF2AD]"></div>
+<img alt="Big Magic" class="w-full h-full object-cover" data-alt="Conceptual book cover with a hand-drawn circle representing wholeness, centered on a creamy parchment paper texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnYdAFrIyFC-OR74NqJ3z4V7u5jg6Yvl2pmut0R8MmZ91iw-Nys9NOTRm46EVT6FhD58K2P21yOaqU75Q2jtcZg9BcF_N_FrLXziSDhLdp7gHL5uF836WmhASuN_rYEgP2cqNJLX0A_n6tTS545YSOkQnS_SG4LUPHwylWgk2zeCAPSY4sXR69Q85MBS0ZlzD2MrEhCMVL7WBCMrQ1L7mKPwR3EACcPBLjmRNtL46VUuRG-DTlFdgGEGgwWqyTWGm2d9donB1wGok"/>
+<div class="absolute inset-0 bg-on-surface/0 group-hover:bg-on-surface/5 transition-colors duration-300"></div>
+<button class="absolute bottom-4 right-4 bg-primary text-on-primary px-4 py-2 rounded-sm font-label text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">
+                            Add to Cart
+                        </button>
+</div>
+<p class="font-label text-[10px] uppercase tracking-[0.2em] text-on-surface-variant mb-2">Elizabeth Gilbert</p>
+<h3 class="font-headline text-xl text-on-surface mb-2">Living Beyond Fear</h3>
+<p class="font-body text-sm text-primary font-bold">$21.00</p>
+</div>
+<!-- Book Card 8 -->
+<div class="group">
+<div class="relative aspect-[3/4] bg-surface-container-low mb-6 overflow-hidden transition-transform duration-500 group-hover:-translate-y-2">
+<div class="absolute left-0 top-0 w-1 h-full bg-[#FFF2AD]"></div>
+<img alt="Indistractable" class="w-full h-full object-cover" data-alt="Book cover with abstract geometric patterns in pale yellow and charcoal, conveying a sense of order and balance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARLU3pusdJ-p884dAt5vvusbAizEBfoqiVgpJyMHpSLVvblgMg52v9W8Ls-zd5RCjV-brfPa8M1F60MEtFM0YLINlKlon5zefmp4IDl7nWN9eFvI170sxIiou5ZevAf-mgmj3BzpxsRFS31n6M4894U-Advi_Dr0AVCredJ7OYwAlr4kxaVbuvZ-k3109_Nx6l6jWFZ941DOGScr3dN6WzxETRhClF1RrFUwaD-qDwB96tUm7jWR34rYiUzrcQMG0rY05qT0-B614"/>
+<div class="absolute inset-0 bg-on-surface/0 group-hover:bg-on-surface/5 transition-colors duration-300"></div>
+<button class="absolute bottom-4 right-4 bg-primary text-on-primary px-4 py-2 rounded-sm font-label text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">
+                            Add to Cart
+                        </button>
+</div>
+<p class="font-label text-[10px] uppercase tracking-[0.2em] text-on-surface-variant mb-2">Nir Eyal</p>
+<h3 class="font-headline text-xl text-on-surface mb-2">Owning Your Focus</h3>
+<p class="font-body text-sm text-primary font-bold">$27.00</p>
+</div>
+</div>
+<!-- Pagination/Load More -->
+<div class="mt-24 text-center">
+<button class="group inline-flex items-center gap-4 text-on-surface hover:text-primary transition-colors duration-300">
+<span class="font-label text-xs uppercase tracking-widest">Discover More Volumes</span>
+<span class="w-12 h-[1px] bg-on-surface group-hover:bg-primary transition-colors"></span>
+<span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</section>
+<!-- Curated Quote Section -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-4xl mx-auto px-8 text-center">
+<span class="material-symbols-outlined text-4xl text-[#FFF2AD] mb-8" data-icon="format_quote">format_quote</span>
+<blockquote class="font-headline text-3xl md:text-4xl italic text-on-surface leading-snug mb-8">
+                    "The journey of a thousand miles begins not with a single step, but with the quiet resolve that today is the day we begin."
+                </blockquote>
+<cite class="font-label text-xs uppercase tracking-[0.3em] text-on-surface-variant not-italic">— Traditional Proverb</cite>
+</div>
+</section>
+<!-- Newsletter / Sanctuary Update -->
+<section class="py-20 px-8 bg-surface">
+<div class="max-w-7xl mx-auto bg-[#FFF9E0] p-12 md:p-20 rounded-sm relative overflow-hidden">
+<div class="max-w-xl relative z-10">
+<h2 class="font-headline text-4xl text-on-surface italic mb-6">Join the Sanctuary</h2>
+<p class="font-body text-on-surface-variant mb-10 leading-relaxed">
+                        Weekly reflections on literature, mindfulness, and the intentional life. Delivered with care to your inbox.
+                    </p>
+<form class="flex flex-col sm:flex-row gap-4">
+<input class="flex-1 bg-surface-container-lowest border-none px-6 py-4 focus:ring-2 focus:ring-primary/30 rounded-sm font-body text-sm" placeholder="Your sanctuary address..." type="email"/>
+<button class="bg-primary text-on-primary px-10 py-4 font-label text-xs uppercase tracking-widest hover:bg-primary-dim transition-colors">
+                            Subscribe
+                        </button>
+</form>
+</div>
+<div class="absolute top-0 right-0 w-1/3 h-full opacity-10 pointer-events-none">
+<img alt="Texture" class="w-full h-full object-cover" data-alt="Abstract soft focus image of old library books with yellowed pages and leather bindings" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdCxNQtMy9ehHxExgiul6dOlKpGhponE2SJZb1WUHQRqUD9J4rlRts8e_i7pNGKhG03LuufCsR2v9yiPd0momlDrVD7LHKzIWvCN7nmcla1RXi8dz90K4I2lCsAp1Th9bR0-VqirheY5U99xzBW8TJpdBA3xxZt5MJi9YBJO_vwuTt1gV5qXRJz2BfqBWxhaX11mpT5Hxosy3u2eczKz1HAGklsJXkr34fcIoYVjP8n8klXY0KenMt89bTHWh5x_3xbSOQLZhu9Zs"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f5f3f0] dark:bg-slate-900 w-full pt-16 pb-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="text-xl font-serif italic text-[#44627f] mb-6">escape corner</div>
+<p class="font-sans text-sm Manrope text-slate-600 dark:text-slate-400 leading-relaxed">
+                    A curated sanctuary for the intentional reader. Every volume selected with soul.
+                </p>
+</div>
+<div>
+<h4 class="font-serif Newsreader text-lg text-[#44627f] dark:text-[#b9d7fa] mb-6">Navigation</h4>
+<ul class="space-y-3">
+<li><a class="font-sans text-sm Manrope text-slate-600 dark:text-slate-400 hover:translate-x-1 transition-transform duration-200 block" href="#">Categories</a></li>
+<li><a class="font-sans text-sm Manrope text-slate-600 dark:text-slate-400 hover:translate-x-1 transition-transform duration-200 block" href="#">About the Sanctuary</a></li>
+<li><a class="font-sans text-sm Manrope text-slate-600 dark:text-slate-400 hover:translate-x-1 transition-transform duration-200 block" href="#">Journal</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-serif Newsreader text-lg text-[#44627f] dark:text-[#b9d7fa] mb-6">Concierge</h4>
+<ul class="space-y-3">
+<li><a class="font-sans text-sm Manrope text-slate-600 dark:text-slate-400 hover:translate-x-1 transition-transform duration-200 block" href="#">Shipping &amp; Returns</a></li>
+<li><a class="font-sans text-sm Manrope text-slate-600 dark:text-slate-400 hover:translate-x-1 transition-transform duration-200 block" href="#">Newsletter</a></li>
+<li><a class="font-sans text-sm Manrope text-slate-600 dark:text-slate-400 hover:translate-x-1 transition-transform duration-200 block" href="#">Privacy Policy</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-serif Newsreader text-lg text-[#44627f] dark:text-[#b9d7fa] mb-6">Connect</h4>
+<div class="flex gap-4">
+<a class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-[#44627f] hover:bg-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="share">share</span>
+</a>
+<a class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-[#44627f] hover:bg-primary-container transition-colors" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="mail">mail</span>
+</a>
+</div>
+</div>
+</div>
+<div class="mt-16 pt-8 border-t border-[#44627f]/10 px-8 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-sans text-xs Manrope text-slate-500">© 2024 escape corner. A Curated Sanctuary for Readers.</p>
+<div class="flex gap-6">
+<span class="font-sans text-xs Manrope text-slate-500">Est. 2022</span>
+<span class="font-sans text-xs Manrope text-slate-500">London, UK</span>
+</div>
+</div>
+</footer>
+<script src="site.js"></script>
+</body></html>

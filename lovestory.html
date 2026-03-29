@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Love Stories | escape corner</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;1,400;1,600&amp;family=Manrope:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-fixed": "#3b473f",
+              "on-secondary-container": "#634c51",
+              "on-error-container": "#6e0a12",
+              "inverse-surface": "#0e0e0d",
+              "primary": "#44627f",
+              "surface-dim": "#dadad6",
+              "tertiary-fixed-dim": "#d2e0d4",
+              "error": "#a83836",
+              "secondary-fixed": "#fbdae1",
+              "secondary-container": "#fbdae1",
+              "on-tertiary-container": "#4d5a51",
+              "on-surface": "#313330",
+              "tertiary-dim": "#49564d",
+              "surface-container-high": "#e9e8e4",
+              "primary-dim": "#385673",
+              "surface-container-lowest": "#ffffff",
+              "on-tertiary": "#eefdf0",
+              "on-surface-variant": "#5e5f5c",
+              "primary-fixed": "#b9d7fa",
+              "error-dim": "#67040d",
+              "on-primary-fixed": "#183854",
+              "error-container": "#fa746f",
+              "tertiary-container": "#e1efe2",
+              "outline-variant": "#b2b2ae",
+              "on-secondary-fixed-variant": "#6d555b",
+              "primary-container": "#b9d7fa",
+              "on-secondary": "#fff7f7",
+              "outline": "#7a7b77",
+              "on-background": "#313330",
+              "inverse-on-surface": "#9e9d9a",
+              "surface-container": "#efeeea",
+              "surface-container-highest": "#e3e3de",
+              "surface-container-low": "#f5f3f0",
+              "secondary-fixed-dim": "#ecccd3",
+              "tertiary-fixed": "#e1efe2",
+              "secondary-dim": "#644d53",
+              "inverse-primary": "#b9d7fa",
+              "on-primary-container": "#2d4b68",
+              "surface": "#fbf9f6",
+              "on-primary-fixed-variant": "#375572",
+              "background": "#fbf9f6",
+              "on-error": "#fff7f6",
+              "surface-bright": "#fbf9f6",
+              "on-secondary-fixed": "#4f3a3f",
+              "on-tertiary-fixed-variant": "#57645a",
+              "secondary": "#71595f",
+              "on-primary": "#f7f9ff",
+              "surface-tint": "#44627f",
+              "primary-fixed-dim": "#abc9ec",
+              "surface-variant": "#e3e3de",
+              "tertiary": "#556259"
+            },
+            fontFamily: {
+              "headline": ["Newsreader", "serif"],
+              "body": ["Manrope", "sans-serif"],
+              "label": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      body { background-color: #fbf9f6; }
+    </style>
+</head>
+<body class="font-body text-on-surface selection:bg-secondary-container">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-[#fbf9f6]/80 backdrop-blur-md">
+<nav class="flex justify-between items-center w-full px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-serif italic text-[#44627f] dark:text-[#b9d7fa]">escape corner</div>
+<div class="hidden md:flex gap-12">
+<a class="font-sans tracking-widest uppercase text-xs text-[#44627f] border-b-2 border-[#44627f] pb-1 transition-colors duration-300" href="#">Categories</a>
+<a class="font-sans tracking-widest uppercase text-xs text-slate-500 hover:text-[#44627f] transition-colors duration-300" href="#">Cart</a>
+<a class="font-sans tracking-widest uppercase text-xs text-slate-500 hover:text-[#44627f] transition-colors duration-300" href="#">Contact</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="material-symbols-outlined text-[#44627f] hover:opacity-70 transition-opacity" data-icon="shopping_cart">shopping_cart</button>
+<button class="material-symbols-outlined text-[#44627f] hover:opacity-70 transition-opacity" data-icon="person">person</button>
+</div>
+</nav>
+</header>
+<main class="pt-24 min-h-screen">
+<!-- Hero Section / Category Header -->
+<section class="relative overflow-hidden py-24 px-8">
+<div class="absolute inset-0 bg-secondary-container/20 -z-10 transform -skew-y-3 origin-top-left translate-y-12"></div>
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div>
+<span class="inline-block py-1 px-3 rounded-full bg-secondary-container text-on-secondary-container text-xs font-label tracking-widest uppercase mb-6">Curated Sanctuary</span>
+<h1 class="text-6xl md:text-8xl font-headline italic text-on-surface leading-tight mb-8">Love Stories</h1>
+<p class="text-lg text-on-surface-variant max-w-md leading-relaxed">
+                        A collection of tender moments, enduring bonds, and the quiet magic of human connection. Hand-selected for the romantic soul.
+                    </p>
+</div>
+<div class="hidden md:block relative">
+<img alt="Romantic book cover aesthetic" class="rounded-xl shadow-2xl rotate-3 max-w-sm ml-auto bg-surface-container" data-alt="Soft-focus overhead shot of a vintage open book with a single dried pink rose and warm afternoon sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFSu_7DIv599Xh6iBcd9co69G2EqfgXRXIkHyAwh7pioexhWvQWY6SPhwneTeCVHgNc3KZDP6XzjzIasa8vaRvr7CiL-gyLRkf1p6D6geE_Cw719TGVuPqJ3HrVURvSzX3vYX1wuVyQpLhdDMxfs54F5frHKfHVl0EIy4790Ds7mM4UMTxIdOlpCk8JGOc0SpHOE2ZsHyAKE97xMLAJzZgjZ2JMCszXcq8ZBa_UnKwhSiZS8gSw8nprhuld_UHFlYo6wfNCEiPkxE"/>
+<div class="absolute -bottom-8 -left-8 w-48 h-48 bg-secondary-container/30 rounded-full blur-3xl -z-10"></div>
+</div>
+</div>
+</section>
+<!-- Category Grid -->
+<section class="max-w-7xl mx-auto px-8 py-24">
+<div class="flex items-baseline justify-between mb-16">
+<h2 class="font-headline text-3xl italic">The Collection</h2>
+<div class="flex gap-4">
+<button class="rounded-full px-6 py-2 bg-secondary-container text-on-secondary-container font-label text-xs tracking-widest uppercase">All Titles</button>
+<button class="rounded-full px-6 py-2 bg-surface-container-high text-on-surface-variant font-label text-xs tracking-widest uppercase hover:bg-surface-container-highest transition-colors">Contemporary</button>
+<button class="rounded-full px-6 py-2 bg-surface-container-high text-on-surface-variant font-label text-xs tracking-widest uppercase hover:bg-surface-container-highest transition-colors">Classic</button>
+</div>
+</div>
+<!-- Bento-inspired Masonry Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-20 gap-x-12">
+<!-- Book Card 1 -->
+<div class="group flex flex-col">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-6 transition-transform duration-500 hover:-translate-y-2">
+<div class="absolute left-0 top-0 w-1 h-full bg-secondary-container"></div>
+<img alt="Paper Hearts" class="w-full aspect-[2/3] object-cover rounded shadow-md group-hover:shadow-xl transition-shadow duration-300" data-alt="Modern book cover design for 'Paper Hearts' featuring delicate origami hearts in soft pink and cream tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxxveDnlX6WJLFzoK8YSnhDA3I4bmYeQ7xXn4oKXyYBbVOz3Gc3Tsi1-gqgtLD0ugVyj_BkR5jLa-iK179vOheD91w8u10YJqP21dNK2qO9cWzPNscwGdiGMdAR5_LBUUTLmyzAsJ81ypDfcv5ZHWI23DlMeM2X0ZQdf5Yw-uYG3M3Ey4y9ZL8WS9nLCCUZowKMhCCKIC4WI4gNHdRdy_64X2gSR7GXAqgbdGO4IFPf66i6CanBoR-pvdethW7I7ohKdgPfb5evBA"/>
+</div>
+<div class="mt-8 space-y-2">
+<p class="font-label text-[10px] tracking-widest uppercase text-on-surface-variant">Michael Thompson</p>
+<h3 class="font-headline text-2xl italic text-on-surface">Paper Hearts</h3>
+<div class="flex justify-between items-center pt-4">
+<span class="font-body text-lg font-semibold text-[#44627f]">$18.50</span>
+<button class="flex items-center gap-2 px-4 py-2 bg-surface-container-highest text-on-surface text-xs font-label uppercase tracking-widest rounded-md hover:bg-secondary-container hover:text-on-secondary-container transition-all duration-300">
+<span class="material-symbols-outlined text-sm" data-icon="add">add</span>
+                                Add to Cart
+                            </button>
+</div>
+</div>
+</div>
+<!-- Book Card 2 -->
+<div class="group flex flex-col">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-6 transition-transform duration-500 hover:-translate-y-2">
+<div class="absolute left-0 top-0 w-1 h-full bg-secondary-container"></div>
+<img alt="Eternal Autumn" class="w-full aspect-[2/3] object-cover rounded shadow-md group-hover:shadow-xl transition-shadow duration-300" data-alt="Minimalist book cover for 'Eternal Autumn' showing a single golden maple leaf resting on a soft velvet surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMOkpD1_wp2LwsAWXc2D1LVDr9lkOCXjrQOrGS78hvZayTeEPPna9cRmAf1qzGijF4OlTmodHS440XRHWq3swxDZeigQ8ZIXgEyxWLvczalqfogxYH5jnupGsVIBC8Cs-2vHAddXMHDDHHOB2B6H2YSeMvTefzayYRkrfSTgi0-FolCyA5Pa8Ftu_3lfcwUG5NvKc7XMHyWjXNhU6vd7Ds3NLotjZTt8TtuO7bsjqks_3IlwkAKBMM-YzMhg-BOdvpuDdVUazJxAU"/>
+</div>
+<div class="mt-8 space-y-2">
+<p class="font-label text-[10px] tracking-widest uppercase text-on-surface-variant">Sarah J. Marrow</p>
+<h3 class="font-headline text-2xl italic text-on-surface">Eternal Autumn</h3>
+<div class="flex justify-between items-center pt-4">
+<span class="font-body text-lg font-semibold text-[#44627f]">$22.00</span>
+<button class="flex items-center gap-2 px-4 py-2 bg-surface-container-highest text-on-surface text-xs font-label uppercase tracking-widest rounded-md hover:bg-secondary-container hover:text-on-secondary-container transition-all duration-300">
+<span class="material-symbols-outlined text-sm" data-icon="add">add</span>
+                                Add to Cart
+                            </button>
+</div>
+</div>
+</div>
+<!-- Book Card 3 -->
+<div class="group flex flex-col">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-6 transition-transform duration-500 hover:-translate-y-2">
+<div class="absolute left-0 top-0 w-1 h-full bg-secondary-container"></div>
+<img alt="Woven Whispers" class="w-full aspect-[2/3] object-cover rounded shadow-md group-hover:shadow-xl transition-shadow duration-300" data-alt="Artistic book cover 'Woven Whispers' featuring two overlapping ethereal silhouettes against a pale blush background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2Lg-8opcO5SnlyqDnnLZglEZ9iOwN473hvyCEo_6O8hO1ztbTAG9OCT-SkjHQkWRTrgDRCJqEVftQSJ8WDxBobDaj5P15THt17VDWXJDr8zkEjWu3nW6VrH2vLrJXyre84Za24-rJnEAzlSZdH3YXrLGuXIzItxuELT_9DvFzJOxuGCZ_BzJPvZBmwi31299ei1HxprrDkTL-hnEHRJqA4BQn-t4xCJ2l0AseoCH-TZRNLVMq-W3FLgT-fZXT63C4G6yRvkRs7pI"/>
+</div>
+<div class="mt-8 space-y-2">
+<p class="font-label text-[10px] tracking-widest uppercase text-on-surface-variant">Elena Vance</p>
+<h3 class="font-headline text-2xl italic text-on-surface">Woven Whispers</h3>
+<div class="flex justify-between items-center pt-4">
+<span class="font-body text-lg font-semibold text-[#44627f]">$19.95</span>
+<button class="flex items-center gap-2 px-4 py-2 bg-surface-container-highest text-on-surface text-xs font-label uppercase tracking-widest rounded-md hover:bg-secondary-container hover:text-on-secondary-container transition-all duration-300">
+<span class="material-symbols-outlined text-sm" data-icon="add">add</span>
+                                Add to Cart
+                            </button>
+</div>
+</div>
+</div>
+<!-- Book Card 4 -->
+<div class="group flex flex-col">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-6 transition-transform duration-500 hover:-translate-y-2">
+<div class="absolute left-0 top-0 w-1 h-full bg-secondary-container"></div>
+<img alt="The Midnight Letter" class="w-full aspect-[2/3] object-cover rounded shadow-md group-hover:shadow-xl transition-shadow duration-300" data-alt="Intimate book cover showing a handwritten letter and an antique ink pen under soft candle lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDc38JokMPW27M6lLE7QnklN06u-zLD7wLmLA9Ze7iZV0wNNxfmppbRAGZ7DMunb1PGHjcDf9F9yTp-g2mb5PRUOiXiepex8hf6xUve4jHvGL2PxoN_VXxeWKfrrz23ItfRK6oZhQdWxNkFEsmsxivelBSQ_cUreENHVbPgiCsO_-Ddh4-5AVdQzDQ4T_qQmjgaFvUTccXCTLXjcez7O_edxvNvSpaaB_xXdIoAjR7h1dIV6FvfkPiWdsYZ8NCRVw4uS53bilS_ilo"/>
+</div>
+<div class="mt-8 space-y-2">
+<p class="font-label text-[10px] tracking-widest uppercase text-on-surface-variant">Jonathan Reeves</p>
+<h3 class="font-headline text-2xl italic text-on-surface">The Midnight Letter</h3>
+<div class="flex justify-between items-center pt-4">
+<span class="font-body text-lg font-semibold text-[#44627f]">$16.75</span>
+<button class="flex items-center gap-2 px-4 py-2 bg-surface-container-highest text-on-surface text-xs font-label uppercase tracking-widest rounded-md hover:bg-secondary-container hover:text-on-secondary-container transition-all duration-300">
+<span class="material-symbols-outlined text-sm" data-icon="add">add</span>
+                                Add to Cart
+                            </button>
+</div>
+</div>
+</div>
+<!-- Book Card 5 -->
+<div class="group flex flex-col">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-6 transition-transform duration-500 hover:-translate-y-2">
+<div class="absolute left-0 top-0 w-1 h-full bg-secondary-container"></div>
+<img alt="Sunlight &amp; Sea Glass" class="w-full aspect-[2/3] object-cover rounded shadow-md group-hover:shadow-xl transition-shadow duration-300" data-alt="Dreamy book cover with scattered colorful sea glass on a sun-drenched beach at dusk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBQqk-ggPCtjM_ZfEMbs6xtmD3-aRi2mczpMuJjam9vp308Likowa8X7x_gpxgSi4UybqLaGH9Mf1t1wvjbO6jMTQ1BtNABOUkaIDghYT0ZhJsUt8NrjQ9-EoYp2FyP_hXUZL_fGhFyBWocMMK0fRJnki7wI14uQQVFJoujC1p4DpG_tK-p7h_-o0KgfTrhwplSczKX5XJpohjOH6RE39-a6-fXTWidV_-J3bFQ1_kQt_UvBsTU3RLjlhtXRcRsz4OboOgY-xDiP8"/>
+</div>
+<div class="mt-8 space-y-2">
+<p class="font-label text-[10px] tracking-widest uppercase text-on-surface-variant">Clara Sterling</p>
+<h3 class="font-headline text-2xl italic text-on-surface">Sunlight &amp; Sea Glass</h3>
+<div class="flex justify-between items-center pt-4">
+<span class="font-body text-lg font-semibold text-[#44627f]">$21.50</span>
+<button class="flex items-center gap-2 px-4 py-2 bg-surface-container-highest text-on-surface text-xs font-label uppercase tracking-widest rounded-md hover:bg-secondary-container hover:text-on-secondary-container transition-all duration-300">
+<span class="material-symbols-outlined text-sm" data-icon="add">add</span>
+                                Add to Cart
+                            </button>
+</div>
+</div>
+</div>
+<!-- Book Card 6 -->
+<div class="group flex flex-col">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-6 transition-transform duration-500 hover:-translate-y-2">
+<div class="absolute left-0 top-0 w-1 h-full bg-secondary-container"></div>
+<img alt="Velvet Shadows" class="w-full aspect-[2/3] object-cover rounded shadow-md group-hover:shadow-xl transition-shadow duration-300" data-alt="Dark romantic book cover with a deep purple rose in soft focus and elegant serif typography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiTgWn1uScjwlFyfqDL5NqfNM7hXO7oe3pVIK7Q3__wSPshOr4lG_qAXpJscEbRzdZglQrFqCRhqWT55B1okRRmiR60hFpd8qfCFkJOpgqg3Q73YllVn8HxHQprsZW23vSNmr5hgd_xBZEjwuzEDdf9vLg0NTYR_odTyhT118O4homLjkXHOgdQdCsVwoBh1ngreS7NfoSlMwbZDCHg0m6757r31ii0xxX4gShS9q368TLqyFU0n56SADo7Fn13T54Lcqvhbyeyms"/>
+</div>
+<div class="mt-8 space-y-2">
+<p class="font-label text-[10px] tracking-widest uppercase text-on-surface-variant">R. L. Harrison</p>
+<h3 class="font-headline text-2xl italic text-on-surface">Velvet Shadows</h3>
+<div class="flex justify-between items-center pt-4">
+<span class="font-body text-lg font-semibold text-[#44627f]">$18.90</span>
+<button class="flex items-center gap-2 px-4 py-2 bg-surface-container-highest text-on-surface text-xs font-label uppercase tracking-widest rounded-md hover:bg-secondary-container hover:text-on-secondary-container transition-all duration-300">
+<span class="material-symbols-outlined text-sm" data-icon="add">add</span>
+                                Add to Cart
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Curated Quote Block -->
+<section class="bg-surface-container-low py-32 px-8 mt-12">
+<div class="max-w-3xl mx-auto text-center space-y-8">
+<span class="material-symbols-outlined text-4xl text-secondary-dim/40" data-icon="format_quote">format_quote</span>
+<p class="font-headline text-4xl md:text-5xl italic leading-tight text-on-surface">
+                    "A room without books is like a body without a soul. A heart without stories is like a summer without sun."
+                </p>
+<cite class="block font-label text-xs tracking-[0.2em] uppercase text-on-surface-variant not-italic">— The Curator's Note</cite>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f5f3f0] dark:bg-slate-900 w-full pt-16 pb-8 mt-24">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 max-w-7xl mx-auto">
+<div class="space-y-6">
+<div class="text-xl font-serif italic text-[#44627f]">escape corner</div>
+<p class="text-slate-600 dark:text-slate-400 font-sans text-sm leading-relaxed">
+                    A curated sanctuary for readers who seek beauty in every page and solace in every story.
+                </p>
+</div>
+<div class="space-y-4">
+<h4 class="font-serif text-lg text-[#44627f]">Navigation</h4>
+<ul class="space-y-3">
+<li><a class="text-slate-600 dark:text-slate-400 text-sm hover:translate-x-1 transition-transform duration-200 inline-block" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-600 dark:text-slate-400 text-sm hover:translate-x-1 transition-transform duration-200 inline-block" href="#">Terms of Service</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-serif text-lg text-[#44627f]">Shop</h4>
+<ul class="space-y-3">
+<li><a class="text-slate-600 dark:text-slate-400 text-sm hover:translate-x-1 transition-transform duration-200 inline-block" href="#">Shipping &amp; Returns</a></li>
+<li><a class="text-slate-600 dark:text-slate-400 text-sm hover:translate-x-1 transition-transform duration-200 inline-block" href="#">Newsletter</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-serif text-lg text-[#44627f]">Connect</h4>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center hover:bg-primary-container transition-colors duration-300" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="mail">mail</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center hover:bg-primary-container transition-colors duration-300" href="#">
+<span class="material-symbols-outlined text-sm" data-icon="share">share</span>
+</a>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 pt-16 border-t border-outline-variant/10 text-center">
+<p class="text-slate-600 dark:text-slate-400 text-xs font-sans">© 2024 escape corner. A Curated Sanctuary for Readers.</p>
+</div>
+</footer>
+<script src="site.js"></script>
+</body></html>
